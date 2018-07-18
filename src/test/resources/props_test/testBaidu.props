@@ -1,0 +1,84 @@
+
+################################################################
+# Properties for test
+# 11/06/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+# 
+################################################################
+politeness:2
+proptype:test
+schema:url,tag, num
+
+
+################################################################
+# source configuration
+################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.baidu.com/
+
+################################################################
+# Get boards list
+################################################################
+process.0.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:href_content
+filter.parameters.begin:<p id="nv">
+filter.parameters.end:</p>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:href_content
+filter.parameters.to:href_sub
+filter.parameters.begin:<a
+filter.parameters.end:</a>
+
+#################################################################
+# loop process builder
+#################################################################
+process.1.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:5
+
+
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:num
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:href_sub
+filter.parameters.to:url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:href_sub
+filter.parameters.to:tag
+filter.parameters.begin:>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:href_sub
+filter.parameters.to:tag
+filter.parameters.begin:>
+
+filter.class:com.souche.ste.filter.ReplaceFilter
+filter.parameters.spliter:,
+filter.parameters.tag:&nb,
+filter.parameters.tag:sp;,
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.num:n/a
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+result.parameter.xxx

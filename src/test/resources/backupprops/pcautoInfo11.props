@@ -1,0 +1,137 @@
+
+################################################################
+# Properties for test
+# 04/06/2014
+# fanyuquan
+# ifeng car info
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:info
+schema:title,title_url,picture,update_time,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.pcauto.com.cn/teach/tiyan/
+
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:list
+filter.parameters.begin:<ul class="ulPic clearfix"> 
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:list
+filter.parameters.to:lists
+filter.parameters.begin:<li>
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_url
+filter.parameters.to:_url
+filter.parameters.end:.html
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:title
+filter.parameters.begin:greyBg">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:lists
+filter.parameters.url:picture
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:title_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:title_body
+
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:maxPage
+filter.parameters.css:.pcauto_page
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:maxPage
+filter.parameters.to:maxPage
+filter.parameters.begin:</a>(共计
+filter.parameters.end:页
+
+filter.class:com.souche.ste.filter.MaxValueLimitFilter
+filter.parameters.attr:maxPage
+filter.parameters.maxValue:10
+
+#################################################################
+# loop process builder
+#################################################################
+process.3.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:_url maxPage 
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:maxPage
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:_url "_" num ".html"
+filter.parameters.to:url1
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url1
+filter.parameters.to:title_body
+
+###############
+# get content
+#############
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:update_time
+filter.parameters.begin:pubtime_baidu">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:update_time
+filter.parameters.to:update_time
+filter.parameters.end: 
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:content
+filter.parameters.begin:artText clearfix"> 
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content
+filter.parameters.to:content
+filter.parameters.begin:】
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

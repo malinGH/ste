@@ -1,0 +1,134 @@
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+################################################################
+politeness:1
+proptype:Xgo
+schema:level,brand,series,series_url,review_url,review
+
+################################################################
+# source configuration
+################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.xgo.com.cn/all.html
+
+################################################################
+#step 1,get level list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:list
+filter.parameters.begin:<ul class="fl_nr clearfix">
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:list
+filter.parameters.to:level_list
+filter.parameters.begin:<a
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:level_list
+filter.parameters.to:level_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.xgo.com.cn/all.html" level_url
+filter.parameters.to:level_url
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:level_list
+filter.parameters.to:level
+filter.parameters.begin:>
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:level_url
+filter.parameters.to:car_body
+
+###############################
+#get type list
+#############################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:car_body
+filter.parameters.to:item
+filter.parameters.css:.marcenter
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:item
+filter.parameters.to:items
+filter.parameters.begin:<ul
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:series_list
+filter.parameters.begin:<dt>
+filter.parameters.end:</dt>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_list
+filter.parameters.to:series_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_list
+filter.parameters.to:ser
+filter.parameters.begin:<a
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:ser
+filter.parameters.to:series
+filter.parameters.begin:">
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:series_url
+filter.parameters.to:series_body
+
+#######################
+#get review
+#######################
+process.3.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_body
+filter.parameters.to:mo
+filter.parameters.begin:<div class="curmbs">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.HrefExtractFilter
+filter.parameters.from:mo
+filter.parameters.url:brand_url
+filter.parameters.anchor:brand
+filter.parameters.id:2
+
+filter.class:com.souche.ste.filter.CssParserMultiFilter
+filter.parameters.from:series_body
+filter.parameters.to:review
+filter.parameters.css:.dpinfos
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:review
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.brand:n/a
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

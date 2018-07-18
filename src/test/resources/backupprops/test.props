@@ -1,0 +1,76 @@
+
+################################################################
+# Properties for test
+# 11/06/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+# 
+################################################################
+politeness:2
+schema:url,company,homepage
+
+
+################################################################
+# source configuration
+################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://dir.indiamart.com/indianexporters/
+source.parameters.method:GET
+source.parameters.getcookies:true
+source.parameters.agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MyIE2; SV1; Alexa Toolbar)
+
+################################################################
+# Get boards list
+################################################################
+process.0.class:com.souche.ste.process.builder.ConfigProcessBuilder
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:to_field
+filter.parameters.begin:begin
+filter.parameters.end:end
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:to_field
+filter.parameters.to:url
+filter.parameters.begin:begin
+filter.parameters.end:end
+
+filter.class:com.souche.ste.filter.ConcatenateFilter
+filter.parameters.spliter:,
+filter.parameters.fields:"abc",url
+filter.parameters.to:url
+
+
+#########
+# block 1
+#########
+processBuilder.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.baseurl:
+filter.parameters.type:get
+filter.parameters.url:url
+filter.parameters.to:content
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:to_field
+filter.parameters.to:url
+filter.parameters.begin:begin
+filter.parameters.end:end
+
+filter.class:com.souche.ste.filter.ReplaceFilter
+filter.parameters.spliter:,
+filter.parameters.url:abc,def
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.PrintResultBuilder
+result.parameter.xxx
+
+

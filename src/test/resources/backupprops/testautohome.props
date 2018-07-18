@@ -1,0 +1,148 @@
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+################################################################
+politeness:2
+proptype:newprice
+schema:brand,series,model,model_url,price
+
+################################################################
+# source configuration
+################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://car.autohome.com.cn/LeftMenu/NewList.ashx?typeId=1&isSubPage=0&brandId=0&fctId=0&seriesId=0
+
+################################################################
+#step 1,get json list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:brand_json
+filter.parameters.begin:document.writeln(
+filter.parameters.end:);
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:brand_json
+filter.parameters.to:brand_info
+filter.parameters.begin:<a id=
+filter.parameters.end:</a
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_info
+filter.parameters.to:brand_url
+filter.parameters.begin:href='
+filter.parameters.end:'
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_info
+filter.parameters.to:brand
+filter.parameters.begin:false'>
+filter.parameters.end:(
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://car.autohome.com.cn" brand_url
+filter.parameters.to:brand_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:brand_url
+filter.parameters.to:brand_body
+
+###################################################################
+# step 2, get series lists
+###################################################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:brand_body
+filter.parameters.to:boxlist
+filter.parameters.begin:<div class="brand_car"
+filter.parameters.end:</div
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:boxlist
+filter.parameters.to:series_info
+filter.parameters.begin:<a
+filter.parameters.end:</a
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_info
+filter.parameters.to:series_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_info
+filter.parameters.to:series
+filter.parameters.begin:>
+
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://car.autohome.com.cn" series_url
+filter.parameters.to:series_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:series_url
+filter.parameters.to:series_body
+
+###################################################################
+# step 3, get model lists
+###################################################################
+
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:series_body
+filter.parameters.to:model_info
+filter.parameters.begin:<tr onmouseover=
+filter.parameters.end:</tr>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_info
+filter.parameters.to:model_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_info
+filter.parameters.to:model
+filter.parameters.begin:>
+filter.parameters.end:</a
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:model_info
+filter.parameters.to:price
+filter.parameters.begin:<span class="tabmach">
+filter.parameters.end:</span>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:model_info
+filter.parameters.to:price
+filter.parameters.begin:<span class="zdjcon">
+filter.parameters.end:</span>
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:model
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:price
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:model_url
+filter.parameters.to:model_url
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.brand:n/a
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

@@ -1,0 +1,170 @@
+
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:AutohomeAdvice
+schema:title,title_url,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.autohome.com.cn/advice/
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:type_list
+filter.parameters.begin:class="nav-channel-link"
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:type_list
+filter.parameters.to:title_info
+filter.parameters.begin:<a
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_info
+filter.parameters.to:type_url0
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:type_url0
+filter.parameters.to:type_url0
+filter.parameters.end:-
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:type_url0 "-" "1" ".html"
+filter.parameters.to:type_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:type_url
+filter.parameters.to:news_body
+
+#################################################################
+# loop process builder
+#################################################################
+process.2.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:250
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:type_url0 "-" num ".html"
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:news_body
+
+###############################################
+#get news list
+################################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:news_body
+filter.parameters.to:items
+filter.parameters.begin:id="ArticlesTitleNav"
+filter.parameters.end:下一页</a>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:item
+filter.parameters.begin:<a ID
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:title
+filter.parameters.begin:>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:item
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:title_body
+
+#######################################
+#get full_text url
+######################################
+process.3.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:full
+filter.parameters.begin:class="article-tools">
+filter.parameters.end:阅读全文</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:full
+filter.parameters.to:full_info
+filter.parameters.begin:<a target
+filter.parameters.end:>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:full_info
+filter.parameters.to:full_url
+filter.parameters.begin:" href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.autohome.com.cn" full_url
+filter.parameters.to:full_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:full_url
+filter.parameters.to:content_body
+
+##################################
+#get content
+#################################
+process.4.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content_body
+filter.parameters.to:content_info
+filter.parameters.begin:id="articleContent"
+filter.parameters.end:class="askedit"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content_info
+filter.parameters.to:content
+filter.parameters.begin:<p>&nbsp;&nbsp;&nbsp; 
+filter.parameters.end:class="askedit"
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.brand:n/a
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

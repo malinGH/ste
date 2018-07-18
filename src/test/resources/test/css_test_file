@@ -1,0 +1,826 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>二手奥迪A6L_奥迪A6L二手车报价_汽车之家</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    
+    <meta http-equiv="x-ua-compatible" content="ie=emulateie7" />
+    <meta name="description" content="【汽车之家提供二手奥迪、二手奥迪A6L，提供奥迪奥迪A6L二手车报价，吸引众多全国二手车商家入驻，提供各种筛选功能，帮您找到符合条件的二手奥迪A6L。】" />
+    <link href="/stylecss/frame.css?v=20131212" rel="stylesheet" type="text/css" />
+    <link href="/2sc/Style/Che168Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--leftstart-->
+    
+<script type="text/javascript">
+    function fnH() {
+        var ftree = document.getElementById('frame_tree');
+        var fleft = document.getElementById('frame_left');
+        var windowh = document.documentElement.clientHeight;
+        ftree.style.height = (windowh - 151) + "px";    
+        fleft.style.height = windowh + "px";
+    }
+    if (window.addEventListener) {
+        window.addEventListener("load", fnH, false);
+        window.addEventListener("resize", fnH, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onload", fnH);
+        window.attachEvent("onresize", fnH);
+    }
+</script>
+<!--头部区域开始-->
+<!--迷你导航开始-->
+<div class="minitop" id="minitop">
+  <div class="mini_main">
+    <div class="mini_left">
+      <ul>
+        <li>
+          <a target="_self" href="http://www.autohome.com.cn/">&lt;&lt; 汽车之家首页</a>
+        </li>
+        <li>
+          <span>|</span>
+        </li>
+        <li id="cslbtt" class="cslbtt"><span>城市：</span><a target="_blank" href="http://www.autohome.com.cn/beijing/">北京</a><a target="_blank" href="http://www.autohome.com.cn/shanghai/">上海</a><a target="_blank" href="http://www.autohome.com.cn/shenzhen/">深圳</a><a target="_blank" href="http://www.autohome.com.cn/guangzhou/">广州</a><a target="_blank" href="http://www.autohome.com.cn/hangzhou/">杭州</a><a target="_blank" href="http://www.autohome.com.cn/nanjing/">南京</a><a target="_blank" href="http://www.autohome.com.cn/AreaList.html">查看所有城市&gt;&gt;</a></li>
+      </ul>
+    </div>
+    <div class="mini_right">
+      <ul class="frs ">
+        <li class="moreli">
+          <div class="moreli_title">
+            <a target="_self" href="javascript:void(0);">
+              <i class="icon-more"></i>
+              <span>更多应用</span>
+              <em></em>
+            </a>
+          </div>
+          <!--更多切换层开始-->
+          <div class="topchadiv topchadiv-dw01">
+            <div class="topchadiv_top">
+              <div class="topchadiv_top_con"></div>
+            </div>
+            <div class="topchadiv_box">
+              <div class="topchadiv_con">
+                <a target="_blank" href="http://www.autohome.com.cn/buycar.html?pvareaid=101806">购车计算器</a>
+                <a target="_blank" href="http://www.autohome.com.cn/channel2/MaintenanceCars/Violation.aspx?pvareaid=101807">违章查询</a>
+                <a target="_blank" href="http://car.autohome.com.cn/zhaoche/jiage/?pvareaid=101808">按价格找车</a>
+                <a target="_blank" href="http://car.autohome.com.cn/zhaoche/pinpai/?pvareaid=101809">按品牌找车</a>
+                <div class="linedc"></div>
+                <a target="_blank" href="http://dealer.autohome.com.cn/Passport/login.aspx?pvareaid=101810">车商汇</a>
+                <a target="_blank" href="http://www.che168.com/?pvareaid=100400">二手车之家</a>
+                <a target="_blank" href="http://www.pcpop.com">泡泡网</a>
+                <a target="_blank" href="http://www.it168.com">IT168</a>
+              </div>
+            </div>
+          </div>
+          <!--更多切换层结束-->
+        </li>
+      </ul>
+      <ul id="clubInfo" class="frs" style="display: none;">
+        <li>
+          <div class="moreli_title"><a target="_blank" href="http://club.autohome.com.cn/?pvareaid=101645"><i class="icon-club"></i><span>进入论坛</span><em></em></a></div>
+          <div class="topchadiv topchadiv-dw02"><div class="topchadiv_top"><div class="topchadiv_top_con"></div></div>
+          <div class="topchadiv_box"><div id="bbsList" class="topchadiv_con">加载中...</div></div></div>
+        </li>
+      </ul>
+       <ul id="gcjinfo" class="frs" style="display: none;">
+        <li>
+          <div class="moreli_title"><a target="_blank" href="http://1111.autohome.com.cn">上传购车节发票</a></div>
+        </li>
+      </ul>
+      <ul id="homeInfo" class="frs" style="display: none;">
+        <li>
+          <div class="moreli_title">
+            <a target="_self" href="javascript:void(0);">
+              <span>消息</span>
+              <span class="info" id="InfoId" style="display:none;"></span>
+              <em></em>
+            </a>
+          </div>
+          <!--更多切换层开始-->
+          <div class="topchadiv topchadiv-dw03">
+            <div class="topchadiv_top">
+              <div class="topchadiv_top_con"></div>
+            </div>
+            <div class="topchadiv_box">
+              <div id="dataInfo" class="topchadiv_con">
+              </div>
+            </div>
+          </div>
+          <!--更多切换层结束-->
+        </li>
+      </ul>
+      <ul id="login" class="frs frs-login"><li><div class="moreli_title">您好！请&nbsp;<a target="_self" href="http://account.autohome.com.cn/?backurl=http://www.autohome.com.cn/beijing/">登录</a>&nbsp;或&nbsp;<a target="_self" href="http://account.autohome.com.cn/register?backurl=http://www.autohome.com.cn/beijing/">注册</a></div></li></ul>
+    </div>
+  </div>
+</div>
+<!--迷你导航结束-->
+<script type="text/javascript">
+    (function () {
+        if (! -[1, ]) {
+            var b_version = navigator.appVersion;
+            var version = b_version.split(";");
+            var trim_Version = version[1].replace(/[ ]/g, "");
+            if (trim_Version == "MSIE6.0") {
+                window.setInterval(function () {
+                    var wtop = document.documentElement.scrollTop || document.body.scrollTop;
+                    document.getElementById("minitop").style.top = (wtop) + "px";  
+                    document.getElementById("frame_top").style.top = (wtop+28) + "px";  
+                    document.getElementById("frame_left").style.top = (wtop)+"px";
+                }, 20);
+            }
+        }
+    })();
+</script>
+<script type="text/javascript">   
+    (function(window, undefined) { var auto = (function() { var document = window.document; var auto = function(selector) { return new auto.fn.init(selector) }; auto.fn = auto.prototype = { elem: null, init: function(selector) { this.length = 1; this[0] = "string" == typeof selector ? document.getElementById(selector) : selector; this.elem = this[0] } }; auto.extend = auto.fn.extend = function() { var target = arguments[0] || {}, i = 1, length = arguments.length, deep = false, options; if (typeof target === "boolean") { deep = target; target = arguments[1] || {}; i = 2 }; if (typeof target !== "object" && !typeof target === "function") target = {}; if (length == i) { target = this; --i }; for (; i < length; i++) { if ((options = arguments[i]) != null) { for (var name in options) { var src = target[name], copy = options[name]; if (target === copy) { continue }; if (deep && copy && typeof copy === "object" && !copy.nodeType) { target[name] = auto.extend(deep, src || (copy.length != null ? [] : {}), copy) } else { if (copy !== undefined) { target[name] = copy } } } } }; return target }; auto.fn.init.prototype = auto.fn; return auto })(); auto.extend({ isArray: function(o) { return Object.prototype.toString.call(o) == "[object Array]" }, isMouseLeaveOrEnter: function(e, handler) { if (e.type !== 'mouseout' && e.type !== 'mouseover') { return false }; var reltg = e.relatedTarget ? e.relatedTarget : (e.type === 'mouseout' ? e.toElement : e.fromElement); while (reltg && reltg !== handler) { reltg = reltg.parentNode }; return (reltg !== handler) }, ready: function(fn) { document.onreadystatechange = function() { if (document.readyState === "complete") fn() } }, cookie: { set: function(name, value, option) { var str = name + '=' + encodeURIComponent(value); if (option) { if (option.expireHours) { var d = new Date(); d.setTime(d.getTime() + option.expireHours * 3600 * 1000); str += '; expires=' + d.toGMTString() }; if (option.path) str += '; path=' + option.path; else str += '; path=/'; if (option.domain) str += '; domain=' + option.domain; if (option.secure) str += '; true' }; document.cookie = str }, get: function(name, defval) { var nameEQ = name + "="; var ca = document.cookie.split(';'); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == ' ') c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length, c.length)) }; return typeof defval == "undefined" ? null : defval }, del: function(name) { var exp = new Date(); exp.setTime(exp.getTime() - 1); var cval = this.get(name); if (cval != null) document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString() } }, jsLoad: function() { var scr, fn, args = [], length = arguments.length; if (length == 1) { target = arguments[0] || {}; if (typeof target == "object") { src = target.url; fn = target.fn; args = target.args } } else { src = arguments[0]; fn = arguments[1]; for (var i = 0; i < length - 2; i++) { args[i] = arguments[i + 2] } }; s = document.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", src); s.onload = s.onreadystatechange = function() { if (!s.readyState || s.readyState == "loaded" || s.readyState == "complete") { if (typeof fn == "function") fn.apply(this, args); s.onload = s.onreadystatechange = null; try { s.parentNode && s.parentNode.removeChild(s) } catch (e) { } } }; document.getElementsByTagName("head")[0].appendChild(s) }, waitTime: function(fn, s) { var waitInterval, args = [], length = arguments.length; if (length > 2) { if (length == 3) { if (auto.isArray(arguments[2])) { args = arguments[2] } } else { for (var i = 0; i < length - 2; i++) { args[i] = arguments[i + 2] } } }; clearTimeout(waitInterval); waitInterval = window.setTimeout(function() { fn.apply(this, args) }, s) }, binds: function(target, eventName, handler, args) { var eventHandler = handler; if (args) { eventHander = function(e) { handler.call(args, e) } }; if (window.addEventListener) { if (eventName.substring(0, 2) == "on") eventName = eventName.substring(2, eventName.length); target.addEventListener(eventName, eventHandler, false) } else if (window.attachEvent) { if (eventName.substring(0, 2) != "on") eventName = "on" + eventName; target.attachEvent(eventName, eventHandler) } }, mouseHover: function(f, c, s) { var fn, args = [], length = arguments.length, fo = auto(f), co = auto(c); if (fo == null || co == null) return; fn = length > 3 ? arguments[3] : function() { }; this.binds(fo[0], "onmouseover", function() { fn(); s == 0 ? co.show() : auto.waitTime(function() { co.show() }, s) }); this.binds(fo[0], "onmouseout", function() { s == 0 ? co.hide() : auto.waitTime(function() { co.hide() }, s) }) }, mouseClick: function(f, c, ch, s) { var fn, args = [], length = arguments.length, fo = auto(f), co = auto(c), cho = auto(ch); if (fo == null || co == null || cho == null) return; fn = length > 4 ? arguments[4] : function() { }; this.binds(cho[0], "onclick", function() { fn(); s == 0 ? co.target() : auto.waitTime(function() { co.target() }, s) }); this.binds(fo[0], "onmouseout", function(evt) { if (auto.isMouseLeaveOrEnter(evt, fo[0])) { s == 0 ? co.hide() : auto.waitTime(function() { co.hide() }, s) } }) } }); auto.fn.extend({ show: function() { this.elem.style.display = "block" }, hide: function() { this.elem.style.display = "none" }, target: function() { this.elem.style.display == "" || this.elem.style.display == "block" ? this.hide() : this.show() }, html: function(val) { if (val) { this.elem.innerHTML = val } else { return this.elem.innerHTML } }, attr: function(name) { var val = arguments[1]; if (val) { this.elem.attributes(name, val) } else { return this.elem.getAttribute(name) } }, css: function(val) { if (val) { this.elem.className = val } else { return this.elem.className } }, click: function(fn) { this.elem.onclick = function() { fn() } }, href: function(url) { if (url) { this.elem.href = url } else { return this.elem.href } } }); auto.extend({ home: { waitTime: [0, 300, 250], homeUrl: "http://www.autohome.com.cn/", clubUrl: "http://club.autohome.com.cn/", clubServUrl: "http://club.service.autohome.com.cn/", newServUrl: "http://news.service.autohome.com.cn/", nowUrl: encodeURIComponent(location.href), ocid: auto.cookie.get("cityId") ? parseInt(auto.cookie.get("cityId")) : 0, ccid: auto.cookie.get("cookieCityId") ? parseInt(auto.cookie.get("cookieCityId")) : 0, areaid: parseInt(auto.cookie.get("area")) ? parseInt(auto.cookie.get("area")) : 0, cid: auto.cookie.get("cookieCityId") == null || auto.cookie.get("cookieCityId") == 0 ? (auto.cookie.get("area") ? parseInt(auto.cookie.get("area") / 100) * 100 : 0) : parseInt(auto.cookie.get("cookieCityId")), getUserArea: function(cid) { var cityid = cid != null || cid > 0 ? cid : auto.home.cid; auto.jsLoad(auto.home.homeUrl + "Ashx/AjaxHeadArea.ashx?OperType=GetAreaNavList&VarName=AreaNavList&CityId=" + cityid, function() { if (typeof AreaNavList != "undefined") { if (AreaNavList.Status) { if (AreaNavList.AreaNavCount > 0) { var arrAreaNav = AreaNavList.AreaNavList; html = "<span>城市：</span>"; for (var i = 0; i < arrAreaNav.length; i++) { html += "<a href=\"" + auto.home.homeUrl + arrAreaNav[i].PinYin + "/\" target=\"_blank\">" + arrAreaNav[i].CityName + "</a>" }; html += "<a href=\"" + auto.home.homeUrl + "AreaList.html\" target=\"_blank\">查看所有城市&gt;&gt;</a>"; auto("cslbtt").html(html) } } } }) }, areaCookie: function() { var r = true; if (typeof arguments[0] == "boolean") { r = arguments[0] }; expire = arguments[1] ? arguments[1] : { expireHours: 36000 * 24, domain: ".autohome.com.cn" }; this.set = function(cityName, oldCityId, newCityId) { auto.cookie.del("cityId"); auto.cookie.del("cookieCityId"); auto.cookie.set("cityId", oldCityId, expire); auto.cookie.set("cookieCityId", newCityId, expire); auto("hidcid")[0].value = newCityId; if (r) { window.location.reload() } else { changArea(newCityId); auto.home.getUserArea(newCityId); auto("changediv").hide(); auto("changediv").html(GetCityHtml(auto("hidcid")[0].value)) } } } } }); window.auto = auto })(window); Function.prototype.bind = function(bindObj, args) { var _self = this; return function() { return _self.apply(bindObj, [].concat(args)) } }; function readCookie(name, defauleValue) { var nameEQ = name + "="; var ca = document.cookie.split(';'); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == ' ') c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length, c.length)) }; return typeof defauleValue != "undefined" ? defauleValue : null }; function AutohomeJsLoad(args) { var s = document.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", args.url); s.onload = s.onreadystatechange = function() { if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") { if (typeof args.callBack == "function") args.callBack(args.args); s.onload = s.onreadystatechange = null; try { s.parentNode && s.parentNode.removeChild(s) } catch (e) { } } }; document.getElementsByTagName("head")[0].appendChild(s) }; Function.prototype.bind = function(bindObj, args) { var _self = this; return function() { return _self.apply(bindObj, [].concat(args)) } }; function AutoUserFct() { this.init() }; AutoUserFct.prototype = { sopClubUrl: auto.home.newServUrl + "header/AjaxHeadClub.ashx?OperType=GetClubList&VarName=UserClubList&timestamp=" + Math.random(), logUrl: "http://account.autohome.com.cn/?backurl=" + auto.home.nowUrl, userUrl: "http://i.autohome.com.cn", regUrl: "http://account.autohome.com.cn/register?backurl=" + auto.home.nowUrl, upgradeUrl: "http://account.autohome.com.cn/Upgrade?backurl=" + auto.home.nowUrl, isLogIn: false, UC: null, UID: null, UP: null, UN: null, clubUserShow: null, isLoadOver: false, logoffArray: [], loginArray: [], LoginDIV: document.getElementById("login"), isNeedAddCookie: function() { var tempClubUserShow = readCookie("clubUserShow"); if (tempClubUserShow == null) { return true } else { return false } }, isShowUserHeader: function() { var tempClubUserShow = readCookie("clubUserShow"); if (tempClubUserShow != null) { this.clubUserShow = tempClubUserShow.split("|"); this.UN = this.clubUserShow[3]; this.UP = parseInt(this.clubUserShow[2]); this.UID = this.clubUserShow[0]; return true } else { return false } }, init: function() { this.isLoadOver = false; window.onfocus = openFun; window.onblur = closeFun; if (readCookie("clubUserShow") != null) { this.isLogIn = true; this.showPageHeader(); if (this.isNeedAddCookie()) { AutohomeJsLoad({ url: "http://account.autohome.com.cn/addcookie/CookieRepair", callBack: function() { } .bind(this, []) }) } else { } } else { this.showPageHeader() } }, getClubList: function(uid) { uid = uid ? uid : this.UID; if (uid) { AutohomeJsLoad({ url: this.sopClubUrl, callBack: function() { html = ""; if (typeof UserClubList != "undefined") { if (UserClubList.Status) { if (UserClubList.ClubCount > 0) { var arrClub = UserClubList.ClubList; for (var i = 0; i < arrClub.length; i++) { html += "<a href=\"" + auto.home.clubUrl + "bbs/forum-c-" + arrClub[i].seriesid + "-1.html?pvareaid=101647\" target=\"_blank\">" + arrClub[i].seriesname + "论坛</a>" } } } } html += "<a href=\"" + auto.home.clubUrl + "bbs/forum-a-" + (100000 + AutohomeUserInfo.UP) + "-1.html?pvareaid=101647\"target=\"_blank\">我的地区论坛</a>"; auto("bbsList").html(html) } .bind(this, []) }) } }, getCookieClubList: function() { if (readCookie("historybbsName4") != null) { var historybbs = readCookie("historybbsName4"); var historystr = ''; html = ""; if (historybbs.indexOf(",") > 0) { historystr = historybbs.split(","); for (var i = historystr.length; i > (historystr.length > 7 ? (historystr.length - 7) : 0); i--) { html += "<a href=\"" + auto.home.clubUrl + "bbs/forum-" + historystr[i - 1].split("|")[0] + "-1.html?pvareaid=101646\" target=\"_blank\">" + historystr[i - 1].split("|")[1] + "论坛</a>" } } else { historystr = historybbs.split("|"); html += "<a href=\"" + auto.home.clubUrl + "bbs/forum-" + historystr[0] + "-1.html?pvareaid=101646\" target=\"_blank\">" + historystr[1] + "论坛</a>" } auto("bbsList").html(html); auto("clubInfo").show() } else { auto("clubInfo").hide() } }, getHomeList: function() { AutohomeJsLoad({ url: 'http://msg.autohome.com.cn/clubalert?callback=jsonpCallbackInfo&uid=' + readCookie("clubUserShow").split("|")[0] + "&timestamp=" + Math.random(), callBack: function() { } }) }, showPageHeader: function() { if (!this.isShowUserHeader()) { htmlMain = "<li><div class=\"moreli_title\">您好！请&nbsp;<a href=\"" + this.logUrl + "\" target=\"_self\">登录</a>&nbsp;或&nbsp;<a href=\"" + this.regUrl + "\" target=\"_self\">注册</a></div></li>"; this.getCookieClubList(); auto("homeInfo").hide() } else { htmlMain = "<li><div class=\"moreli_title\">您好！<a href=\"" + this.userUrl + "\" class=\"reda\">" + this.UN + "</a>&nbsp;<a href=\"javascript:AutohomeUserInfo.logoff()\" target=\"_self\">退出</a></div></li>"; this.getHomeList(); this.getClubList(); auto("clubInfo").show(); auto("homeInfo").show() } this.onlogin(); this.LoginDIV.innerHTML = htmlMain }, logoff: function() { this.isLogIn = false; this.isLoadOver = false; window.clearInterval(clearIntervar); AutohomeJsLoad({ url: "http://account.autohome.com.cn/login/logoutjson?backvar=autologinout&timestamp=" + Math.random(), callBack: function() { this.logoffHTML(); this.onlogoff(); this.getCookieClubList(); auto("homeInfo").hide() } .bind(this, []) }); AutohomeJsLoad({ url: "http://account.che168.com/login/logoutjson?backvar=cheloginout&timestamp=" + Math.random(), callBack: function() { } .bind(this, []) }) }, logoffHTML: function() { this.isLogIn = false; this.isLoadOver = true; this.LoginDIV.innerHTML = "<li><div class=\"moreli_title\">您好！请&nbsp;<a href=\"" + this.logUrl + "\" target=\"_self\">登录</a>&nbsp;或&nbsp;<a href=\"" + this.regUrl + "\" target=\"_self\">注册</a></div></li>" }, onlogoff: function() { for (var i = 0, length = this.logoffArray.length; i < length; i++) { if (typeof this.logoffArray[i] == "function") try { this.logoffArray[i]() } catch (err) { } } }, onlogin: function() { this.isLoadOver = true; for (var i = 0, length = this.loginArray.length; i < length; i++) { if (typeof this.loginArray[i] == "function") try { this.loginArray[i]() } catch (err) { } } }, onloginAdd: function(fun) { if (typeof fun == "function" && this.isLoadOver) { try { fun() } catch (err) { } } this.loginArray.push(fun) }, onlogoffAdd: function(fun) { if (typeof fun == "function" && this.isLoadOver) { try { fun() } catch (err) { } } this.logoffArray.push(fun) } }; var AutohomeUserInfo = new AutoUserFct(); function jsonpCallbackInfo(data) { var html = "", temp = ""; data.NewReply > 0 ? (data.NewReply > 99 ? html += "<a href=\"http://i.autohome.com.cn/receivereply/?pvareaid=101298\" target=\"_blank\"><span class=\"cn\">99+条新论坛回复</span><span class=\"ck\">查看论坛回复</span></a>" : html += "<a href=\"http://i.autohome.com.cn/receivereply/?pvareaid=101298\" target=\"_blank\"><span class=\"cn\">" + data.NewReply + "条新论坛回复</span><span class=\"ck\">查看论坛回复</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/receivereply/?pvareaid=101606\" target=\"_blank\">查看论坛回复</a>"; data.commentreply > 0 ? (data.commentreply > 99 ? html += "<a href=\"http://i.autohome.com.cn/inbox/?pvareaid=101482\" target=\"_blank\"><span class=\"cn\">99+条新评论回复</span><span class=\"ck\">查看评论回复</span></a>" : html += "<a href=\"http://i.autohome.com.cn/inbox/?pvareaid=101482\" target=\"_blank\"><span class=\"cn\">" + data.commentreply + "条新评论回复</span><span class=\"ck\">查看评论回复</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/inbox/?pvareaid=101607\" target=\"_blank\">查看评论回复</a>"; data.NewComment > 0 ? (data.NewComment > 99 ? html += "<a href=\"http://i.autohome.com.cn/club/record_comment/?pvareaid=101299\" target=\"_blank\"><span class=\"cn\">99+条新话说评论</span><span class=\"ck\">查看话说评论</span></a>" : html += "<a href=\"http://i.autohome.com.cn/club/record_comment/?pvareaid=101299\" target=\"_blank\"><span class=\"cn\">" + data.NewComment + "条新话说评论</span><span class=\"ck\">查看话说评论</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/club/record_comment/?pvareaid=101608\" target=\"_blank\">查看话说评论</a>"; data.NewLetter > 0 ? (data.NewLetter > 99 ? html += "<a href=\"http://i.autohome.com.cn/club/message/?pvareaid=101300\" target=\"_blank\"><span class=\"cn\">99+条新私信</span><span class=\"ck\">查看私信</span></a>" : html += "<a href=\"http://i.autohome.com.cn/club/message/?pvareaid=101300\" target=\"_blank\"><span class=\"cn\">" + data.NewLetter + "条新私信</span><span class=\"ck\">查看私信</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/club/message/?pvareaid=101609\" target=\"_blank\">查看私信</a>"; data.NewNotice > 0 ? (data.NewNotice > 99 ? html += "<a href=\"http://i.autohome.com.cn/club/notice/?pvareaid=101301\" target=\"_blank\"><span class=\"cn\">99+条新通知</span><span class=\"ck\">查看通知</span></a>" : html += "<a href=\"http://i.autohome.com.cn/club/notice/?pvareaid=101301\" target=\"_blank\"><span class=\"cn\">" + data.NewNotice + "条新通知</span><span class=\"ck\">查看通知</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/club/notice/?pvareaid=101610\" target=\"_blank\">查看通知</a>"; data.NewFollowers > 0 ? (data.NewFollowers > 99 ? html += "<a href=\"http://i.autohome.com.cn/club/follower/?pvareaid=101297\" target=\"_blank\"><span class=\"cn\">99+个新粉丝</span><span class=\"ck\">查看粉丝</span></a>" : html += "<a href=\"http://i.autohome.com.cn/club/follower/?pvareaid=101297\" target=\"_blank\"><span class=\"cn\">" + data.NewFollowers + "个新粉丝</span><span class=\"ck\">查看粉丝</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/club/follower/?pvareaid=101611\" target=\"_blank\">查看粉丝</a>"; if (data.order != null) { data.order > 0 ? (data.order > 99 ? html += "<a href=\"http://i.autohome.com.cn/club/orderlist/?pvareaid=101548\" target=\"_blank\"><span class=\"cn\">99+条新订单</span><span class=\"ck\">查看订单</span></a>" : html += "<a href=\"http://i.autohome.com.cn/orderlist/?pvareaid=101548\" target=\"_blank\"><span class=\"cn\">" + data.order + "条新订单</span><span class=\"ck\">查看订单</span></a>") : temp += "<a href=\"http://i.autohome.com.cn/orderlist/?pvareaid=101612\" target=\"_blank\">查看订单</a>" } else { temp += "<a href=\"http://i.autohome.com.cn/orderlist/?pvareaid=101612\" target=\"_blank\">查看订单</a>" } var a = ""; if (html.length > 0 && temp.length > 0) { a = html + "<div class=\"linedc\"></div>" + temp } else if (temp.length == 0) { a = html } else if (html.length == 0) { a = temp } auto("dataInfo").html(a); var count = data.NewLetter + data.NewReply + data.NewComment + data.NewNotice + data.NewFollowers + data.commentreply + (data.order == null ? 0 : data.order); if (count > 0) { if (count > 99) { auto("InfoId").css("info"); document.getElementById("InfoId").innerHTML = "99+"; auto("InfoId").show() } else { auto("InfoId").css("info"); auto("InfoId").html(count); auto("InfoId").show() } } else { auto("InfoId").hide() } }; var clearIntervar = null; function openFun() { if (AutohomeUserInfo.isLogIn) { AutohomeUserInfo.getHomeList(); clearIntervar = setInterval("AutohomeUserInfo.getHomeList()", 15000) } }; function closeFun() { if (AutohomeUserInfo.isLogIn) { window.clearInterval(clearIntervar) } }; auto.home.getUserArea();
+</script>
+<script type="text/javascript">
+    (function(win){var doc=win.document,navSelect=byClass('moreli_title',null,'div'),nodeCache=[],len=navSelect.length,i=len-1;function byClass(name,content,tag){var arr=[],nodes=(content||doc).getElementsByTagName((tag||'*')),len=nodes.length,pattern=new RegExp("(\\s|^)"+name+"($|\\s)"),i=0;for(;i<len;i++)pattern.test(nodes[i].className)&&arr.push(nodes[i]);return arr};function addEvent(elem,type,fn){elem.addEventListener?elem.addEventListener(type,fn,false):elem.attachEvent('on'+type,fn)};function hasClass(elem,name){var className=' '+name+' ';if((' '+elem.className+' ').replace(/[\n\t]/g,' ').indexOf(className)>-1)return true;return false};function addClass(elem,name){!hasClass(elem,name)&&(elem.className+=(elem.className?' ':'')+name)};function removeClass(elem,name){hasClass(elem,name)&&(elem.className=elem.className.replace(name,''))};function getSelect(elem){var o=null,n=elem.nextSibling;while(n){if(n.nodeType===1&&n.className&&n.className.indexOf('topchadiv')!=-1){o=n;break}n=n.nextSibling};return o};for(;i>-1;i--){(function(i){addEvent(navSelect[i],'mouseover',function(){navSelect[i].timer&&clearTimeout(navSelect[i].timer);var s;if(nodeCache[i]){s=nodeCache[i]}else{s=nodeCache[i]=getSelect(navSelect[i]);if(s){addEvent(s,'click',function(e){var target=e.srcElement==null?e.target:e.srcElement;if(target.tagName=="A"||target.parentNode.tagName=="A"){navSelect[i].timer=setTimeout(function(){s&&(s.style.display='none',removeClass(navSelect[i],'moreli_active'))},0)}});addEvent(s,'mouseover',function(){navSelect[i].timer&&clearTimeout(navSelect[i].timer)});addEvent(s,'mouseout',function(){navSelect[i].timer=setTimeout(function(){s&&(s.style.display='none',removeClass(navSelect[i],'moreli_active'))},50)})}}if(s){s.style.display='block';addClass(navSelect[i],'moreli_active')}});addEvent(navSelect[i],'mouseout',function(){var s;if(nodeCache[i])s=nodeCache[i];else s=nodeCache[i]=getSelect(navSelect[i]);navSelect[i].timer=setTimeout(function(){s&&(s.style.display='none',removeClass(navSelect[i],'moreli_active'))},50)})})(i)}})(window);
+</script>
+<!--顶部开始-->
+<div id="frame_top" class="frame_top">
+   <div class="topline">
+      <div id="logo"><a href="http://www.autohome.com.cn"><img src="http://www.autoimg.cn/car/images/logo.png" /></a></div>
+   </div>
+   <ul>
+      <li class=""><a href="/price/series-18.html">报价</a></li>
+	  <li class=""><a href="/pic/series/18.html">图片</a></li>
+      <li class=""><a href="/baoyang/list_1_33_9_18_0.html">保养</a></li>      
+	  <li class=""><a href="/video/series-18.html">视频</a></li>
+      <li class="hot"><a id="aChe168Link" href="">二手车</a></li>
+	  <li class=""><a href="/shuyu/index.html">百科</a></li>	  
+      <li class="navpos"><a href="/jingxuan/index.html" target="_blank">精图</a></li>
+   </ul>
+   <div class="topline_bottom"></div>
+</div>
+<script type="text/javascript">
+
+    /*取COOKIE*/
+    function che168ReadCookie(name,defaultVal) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+        }
+        return defaultVal;
+    }
+    /*二手车TAB　Link*/
+    function GetChe168Link() {
+        var url = "/2sc/area/index.html";
+        var areaId=330199;
+        if (parseInt(areaId) == 0) {
+            var area = che168ReadCookie("cookieCityId", 0);
+            if (parseInt(area) == 0)
+                area = che168ReadCookie("area", 0);
+            if (parseInt(area) > 0) {
+                url = url.replace("area", area);
+            }
+            else {
+                url = url.replace("area", "1");
+            }
+        }
+        else {
+            url = url.replace("area", areaId);
+        }
+        document.getElementById("aChe168Link").href = url;
+
+    }
+    GetChe168Link();
+</script>
+<!--顶部结束-->
+    
+<!--左侧导航树开始-->
+<div id="frame_left" class="frame_left">
+    <div class="frame_treesub">
+        <ul id="navul">
+                <li><a name="A" href="javascript:void(0);">A</a></li>
+                <li><a name="B" href="javascript:void(0);">B</a></li>
+                <li><a name="C" href="javascript:void(0);">C</a></li>
+                <li><a name="D" href="javascript:void(0);">D</a></li>
+                <li class="none"><a href="javascript:void(0);" stop="1">E</a></li>
+                <li><a name="F" href="javascript:void(0);">F</a></li>
+                <li><a name="G" href="javascript:void(0);">G</a></li>
+                <li><a name="H" href="javascript:void(0);">H</a></li>
+                <li><a name="J" href="javascript:void(0);">J</a></li>
+                <li><a name="K" href="javascript:void(0);">K</a></li>
+                <li><a name="L" href="javascript:void(0);">L</a></li>
+                <li><a name="M" href="javascript:void(0);">M</a></li>
+                <li><a name="N" href="javascript:void(0);">N</a></li>
+                <li><a name="O" href="javascript:void(0);">O</a></li>
+                <li><a name="P" href="javascript:void(0);">P</a></li>
+                <li><a name="Q" href="javascript:void(0);">Q</a></li>
+                <li><a name="R" href="javascript:void(0);">R</a></li>
+                <li><a name="S" href="javascript:void(0);">S</a></li>
+                <li class="none"><a href="javascript:void(0);" stop="1">T</a></li>
+                <li class="none"><a href="javascript:void(0);" stop="1">U</a></li>
+                <li><a name="W" href="javascript:void(0);">W</a></li>
+                <li><a name="X" href="javascript:void(0);">X</a></li>
+                <li><a name="Y" href="javascript:void(0);">Y</a></li>
+                <li><a name="Z" href="javascript:void(0);">Z</a></li>
+            </ul>
+    </div>
+    <div id="frame_tree" class="frame_tree" style="height: 1000px;">
+        <ul id="ulTree" style=" display:none;">
+        <li id='b33'  class='openli' name='A_first' ><h3 onclick='OpenBrandLi(330199,33)'><em></em><span>A</span><a id='brand_33'  href='/2sc/list-330199-33-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>奥迪</a></h3><div id='bl33' class='listtree' style='display:block;'><dl><dd><a id='series_18' href='/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' style='color:#000000; font-weight:bold'>奥迪A6L</a></dd><dd><a id='series_692' href='/2sc/list-330199-33-692-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A4L</a></dd><dd><a id='series_812' href='/2sc/list-330199-33-812-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪Q5</a></dd><dd><a id='series_412' href='/2sc/list-330199-33-412-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪Q7</a></dd><dd><a id='series_146' href='/2sc/list-330199-33-146-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A8</a></dd><dd><a id='series_19' href='/2sc/list-330199-33-19-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A4</a></dd><dd><a id='series_509' href='/2sc/list-330199-33-509-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A6</a></dd><dd><a id='series_148' href='/2sc/list-330199-33-148-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪TT</a></dd><dd><a id='series_538' href='/2sc/list-330199-33-538-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A5</a></dd><dd><a id='series_370' href='/2sc/list-330199-33-370-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A3(进口)</a></dd><dd><a id='series_650' href='/2sc/list-330199-33-650-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A1</a></dd><dd><a id='series_740' href='/2sc/list-330199-33-740-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A7</a></dd><dd><a id='series_593' href='/2sc/list-330199-33-593-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪Q5(进口)</a></dd><dd><a id='series_2740' href='/2sc/list-330199-33-2740-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪TTS</a></dd><dd><a id='series_2734' href='/2sc/list-330199-33-2734-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪S5</a></dd><dd><a id='series_2951' href='/2sc/list-330199-33-2951-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪Q3</a></dd><dd><a id='series_2264' href='/2sc/list-330199-33-2264-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪Q3(进口)</a></dd><dd><a id='series_511' href='/2sc/list-330199-33-511-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪R8</a></dd><dd><a id='series_471' href='/2sc/list-330199-33-471-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A4(进口)</a></dd><dd><a id='series_100007' href='/2sc/list-330199-33-100007-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪100</a></dd><dd><a id='series_100006' href='/2sc/list-330199-33-100006-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪200</a></dd><dd><a id='series_2735' href='/2sc/list-330199-33-2735-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪RS 5</a></dd><dd><a id='series_2739' href='/2sc/list-330199-33-2739-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪S8</a></dd><dd><a id='series_472' href='/2sc/list-330199-33-472-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪A6(进口)</a></dd><dd><a id='series_100014' href='/2sc/list-330199-33-100014-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >Allroad</a></dd><dd><a id='series_2736' href='/2sc/list-330199-33-2736-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪S6</a></dd><dd><a id='series_2738' href='/2sc/list-330199-33-2738-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html' >奥迪S7</a></dd></dl></div></li><li id='b34'   name='A_child' ><h3 onclick='OpenBrandLi(330199,34)'><em></em><span>A</span><a id='brand_34'  href='/2sc/list-330199-34-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>阿尔法罗密欧</a></h3></li><li id='b35'   name='A_child' ><h3 onclick='OpenBrandLi(330199,35)'><em></em><span>A</span><a id='brand_35'  href='/2sc/list-330199-35-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>阿斯顿·马丁</a></h3></li><li id='b36'   name='B_first' ><h3 onclick='OpenBrandLi(330199,36)'><em></em><span>B</span><a id='brand_36'  href='/2sc/list-330199-36-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>奔驰</a></h3></li><li id='b37'   name='B_child' ><h3 onclick='OpenBrandLi(330199,37)'><em></em><span>B</span><a id='brand_37'  href='/2sc/list-330199-37-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>布加迪</a></h3></li><li id='b38'   name='B_child' ><h3 onclick='OpenBrandLi(330199,38)'><em></em><span>B</span><a id='brand_38'  href='/2sc/list-330199-38-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>别克</a></h3></li><li id='b39'   name='B_child' ><h3 onclick='OpenBrandLi(330199,39)'><em></em><span>B</span><a id='brand_39'  href='/2sc/list-330199-39-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>宾利</a></h3></li><li id='b40'   name='B_child' ><h3 onclick='OpenBrandLi(330199,40)'><em></em><span>B</span><a id='brand_40'  href='/2sc/list-330199-40-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>保时捷</a></h3></li><li id='b75'   name='B_child' ><h3 onclick='OpenBrandLi(330199,75)'><em></em><span>B</span><a id='brand_75'  href='/2sc/list-330199-75-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>比亚迪</a></h3></li><li id='b95'   name='B_child' ><h3 onclick='OpenBrandLi(330199,95)'><em></em><span>B</span><a id='brand_95'  href='/2sc/list-330199-95-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>奔腾</a></h3></li><li id='b13'   name='B_child' ><h3 onclick='OpenBrandLi(330199,13)'><em></em><span>B</span><a id='brand_13'  href='/2sc/list-330199-13-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>标致</a></h3></li><li id='b14'   name='B_child' ><h3 onclick='OpenBrandLi(330199,14)'><em></em><span>B</span><a id='brand_14'  href='/2sc/list-330199-14-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>本田</a></h3></li><li id='b15'   name='B_child' ><h3 onclick='OpenBrandLi(330199,15)'><em></em><span>B</span><a id='brand_15'  href='/2sc/list-330199-15-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>宝马</a></h3></li><li id='b27'   name='B_child' ><h3 onclick='OpenBrandLi(330199,27)'><em></em><span>B</span><a id='brand_27'  href='/2sc/list-330199-27-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>北京汽车</a></h3></li><li id='b120'   name='B_child' ><h3 onclick='OpenBrandLi(330199,120)'><em></em><span>B</span><a id='brand_120'  href='/2sc/list-330199-120-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>宝骏</a></h3></li><li id='b140'   name='B_child' ><h3 onclick='OpenBrandLi(330199,140)'><em></em><span>B</span><a id='brand_140'  href='/2sc/list-330199-140-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>巴博斯</a></h3></li><li id='b143'   name='B_child' ><h3 onclick='OpenBrandLi(330199,143)'><em></em><span>B</span><a id='brand_143'  href='/2sc/list-330199-143-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>北汽威旺</a></h3></li><li id='b154'   name='B_child' ><h3 onclick='OpenBrandLi(330199,154)'><em></em><span>B</span><a id='brand_154'  href='/2sc/list-330199-154-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>北汽制造</a></h3></li><li id='b163'   name='C_first' ><h3 onclick='OpenBrandLi(330199,163)'><em></em><span>C</span><a id='brand_163'  href='/2sc/list-330199-163-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>长安商用</a></h3></li><li id='b79'   name='C_child' ><h3 onclick='OpenBrandLi(330199,79)'><em></em><span>C</span><a id='brand_79'  href='/2sc/list-330199-79-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>昌河</a></h3></li><li id='b76'   name='C_child' ><h3 onclick='OpenBrandLi(330199,76)'><em></em><span>C</span><a id='brand_76'  href='/2sc/list-330199-76-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>长安</a></h3></li><li id='b77'   name='C_child' ><h3 onclick='OpenBrandLi(330199,77)'><em></em><span>C</span><a id='brand_77'  href='/2sc/list-330199-77-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>长城</a></h3></li><li id='b81'   name='D_first' ><h3 onclick='OpenBrandLi(330199,81)'><em></em><span>D</span><a id='brand_81'  href='/2sc/list-330199-81-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>东南</a></h3></li><li id='b41'   name='D_child' ><h3 onclick='OpenBrandLi(330199,41)'><em></em><span>D</span><a id='brand_41'  href='/2sc/list-330199-41-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>道奇</a></h3></li><li id='b92'   name='D_child' ><h3 onclick='OpenBrandLi(330199,92)'><em></em><span>D</span><a id='brand_92'  href='/2sc/list-330199-92-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>大发</a></h3></li><li id='b32'   name='D_child' ><h3 onclick='OpenBrandLi(330199,32)'><em></em><span>D</span><a id='brand_32'  href='/2sc/list-330199-32-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>东风</a></h3></li><li id='b1'   name='D_child' ><h3 onclick='OpenBrandLi(330199,1)'><em></em><span>D</span><a id='brand_1'  href='/2sc/list-330199-1-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>大众</a></h3></li><li id='b142'   name='D_child' ><h3 onclick='OpenBrandLi(330199,142)'><em></em><span>D</span><a id='brand_142'  href='/2sc/list-330199-142-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>东风小康</a></h3></li><li id='b113'   name='D_child' ><h3 onclick='OpenBrandLi(330199,113)'><em></em><span>D</span><a id='brand_113'  href='/2sc/list-330199-113-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>东风风神</a></h3></li><li id='b165'   name='D_child' ><h3 onclick='OpenBrandLi(330199,165)'><em></em><span>D</span><a id='brand_165'  href='/2sc/list-330199-165-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>东风风行</a></h3></li><li id='b169'   name='D_child' ><h3 onclick='OpenBrandLi(330199,169)'><em></em><span>D</span><a id='brand_169'  href='/2sc/list-330199-169-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>DS</a></h3></li><li id='b187'   name='D_child' ><h3 onclick='OpenBrandLi(330199,187)'><em></em><span>D</span><a id='brand_187'  href='/2sc/list-330199-187-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>东风风度</a></h3></li><li id='b141'   name='F_first' ><h3 onclick='OpenBrandLi(330199,141)'><em></em><span>F</span><a id='brand_141'  href='/2sc/list-330199-141-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>福迪</a></h3></li><li id='b3'   name='F_child' ><h3 onclick='OpenBrandLi(330199,3)'><em></em><span>F</span><a id='brand_3'  href='/2sc/list-330199-3-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>丰田</a></h3></li><li id='b8'   name='F_child' ><h3 onclick='OpenBrandLi(330199,8)'><em></em><span>F</span><a id='brand_8'  href='/2sc/list-330199-8-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>福特</a></h3></li><li id='b11'   name='F_child' ><h3 onclick='OpenBrandLi(330199,11)'><em></em><span>F</span><a id='brand_11'  href='/2sc/list-330199-11-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>菲亚特</a></h3></li><li id='b96'   name='F_child' ><h3 onclick='OpenBrandLi(330199,96)'><em></em><span>F</span><a id='brand_96'  href='/2sc/list-330199-96-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>福田</a></h3></li><li id='b42'   name='F_child' ><h3 onclick='OpenBrandLi(330199,42)'><em></em><span>F</span><a id='brand_42'  href='/2sc/list-330199-42-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>法拉利</a></h3></li><li id='b82'   name='G_first' ><h3 onclick='OpenBrandLi(330199,82)'><em></em><span>G</span><a id='brand_82'  href='/2sc/list-330199-82-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>广汽传祺</a></h3></li><li id='b112'   name='G_child' ><h3 onclick='OpenBrandLi(330199,112)'><em></em><span>G</span><a id='brand_112'  href='/2sc/list-330199-112-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>GMC</a></h3></li><li id='b108'   name='G_child' ><h3 onclick='OpenBrandLi(330199,108)'><em></em><span>G</span><a id='brand_108'  href='/2sc/list-330199-108-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>广汽吉奥</a></h3></li><li id='b181'   name='H_first' ><h3 onclick='OpenBrandLi(330199,181)'><em></em><span>H</span><a id='brand_181'  href='/2sc/list-330199-181-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>哈弗</a></h3></li><li id='b150'   name='H_child' ><h3 onclick='OpenBrandLi(330199,150)'><em></em><span>H</span><a id='brand_150'  href='/2sc/list-330199-150-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>海格</a></h3></li><li id='b43'   name='H_child' ><h3 onclick='OpenBrandLi(330199,43)'><em></em><span>H</span><a id='brand_43'  href='/2sc/list-330199-43-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>悍马</a></h3></li><li id='b97'   name='H_child' ><h3 onclick='OpenBrandLi(330199,97)'><em></em><span>H</span><a id='brand_97'  href='/2sc/list-330199-97-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>黄海</a></h3></li><li id='b91'   name='H_child' ><h3 onclick='OpenBrandLi(330199,91)'><em></em><span>H</span><a id='brand_91'  href='/2sc/list-330199-91-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>红旗</a></h3></li><li id='b85'   name='H_child' ><h3 onclick='OpenBrandLi(330199,85)'><em></em><span>H</span><a id='brand_85'  href='/2sc/list-330199-85-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>华普</a></h3></li><li id='b86'   name='H_child' ><h3 onclick='OpenBrandLi(330199,86)'><em></em><span>H</span><a id='brand_86'  href='/2sc/list-330199-86-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>海马</a></h3></li><li id='b87'   name='H_child' ><h3 onclick='OpenBrandLi(330199,87)'><em></em><span>H</span><a id='brand_87'  href='/2sc/list-330199-87-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>华泰</a></h3></li><li id='b24'   name='H_child' ><h3 onclick='OpenBrandLi(330199,24)'><em></em><span>H</span><a id='brand_24'  href='/2sc/list-330199-24-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>哈飞</a></h3></li><li id='b25'   name='J_first' ><h3 onclick='OpenBrandLi(330199,25)'><em></em><span>J</span><a id='brand_25'  href='/2sc/list-330199-25-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>吉利</a></h3></li><li id='b46'   name='J_child' ><h3 onclick='OpenBrandLi(330199,46)'><em></em><span>J</span><a id='brand_46'  href='/2sc/list-330199-46-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>Jeep</a></h3></li><li id='b44'   name='J_child' ><h3 onclick='OpenBrandLi(330199,44)'><em></em><span>J</span><a id='brand_44'  href='/2sc/list-330199-44-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>捷豹</a></h3></li><li id='b83'   name='J_child' ><h3 onclick='OpenBrandLi(330199,83)'><em></em><span>J</span><a id='brand_83'  href='/2sc/list-330199-83-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>金杯</a></h3></li><li id='b84'   name='J_child' ><h3 onclick='OpenBrandLi(330199,84)'><em></em><span>J</span><a id='brand_84'  href='/2sc/list-330199-84-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>江淮</a></h3></li><li id='b151'   name='J_child' ><h3 onclick='OpenBrandLi(330199,151)'><em></em><span>J</span><a id='brand_151'  href='/2sc/list-330199-151-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>九龙</a></h3></li><li id='b119'   name='J_child' ><h3 onclick='OpenBrandLi(330199,119)'><em></em><span>J</span><a id='brand_119'  href='/2sc/list-330199-119-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>江铃</a></h3></li><li id='b104'   name='J_child' ><h3 onclick='OpenBrandLi(330199,104)'><em></em><span>J</span><a id='brand_104'  href='/2sc/list-330199-104-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>吉利全球鹰</a></h3></li><li id='b105'   name='J_child' ><h3 onclick='OpenBrandLi(330199,105)'><em></em><span>J</span><a id='brand_105'  href='/2sc/list-330199-105-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>吉利帝豪</a></h3></li><li id='b106'   name='J_child' ><h3 onclick='OpenBrandLi(330199,106)'><em></em><span>J</span><a id='brand_106'  href='/2sc/list-330199-106-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>吉利英伦</a></h3></li><li id='b175'   name='J_child' ><h3 onclick='OpenBrandLi(330199,175)'><em></em><span>J</span><a id='brand_175'  href='/2sc/list-330199-175-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>金旅</a></h3></li><li id='b101'   name='K_first' ><h3 onclick='OpenBrandLi(330199,101)'><em></em><span>K</span><a id='brand_101'  href='/2sc/list-330199-101-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>开瑞</a></h3></li><li id='b47'   name='K_child' ><h3 onclick='OpenBrandLi(330199,47)'><em></em><span>K</span><a id='brand_47'  href='/2sc/list-330199-47-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>凯迪拉克</a></h3></li><li id='b9'   name='K_child' ><h3 onclick='OpenBrandLi(330199,9)'><em></em><span>K</span><a id='brand_9'  href='/2sc/list-330199-9-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>克莱斯勒</a></h3></li><li id='b10'   name='L_first' ><h3 onclick='OpenBrandLi(330199,10)'><em></em><span>L</span><a id='brand_10'  href='/2sc/list-330199-10-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>雷诺</a></h3></li><li id='b48'   name='L_child' ><h3 onclick='OpenBrandLi(330199,48)'><em></em><span>L</span><a id='brand_48'  href='/2sc/list-330199-48-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>兰博基尼</a></h3></li><li id='b49'   name='L_child' ><h3 onclick='OpenBrandLi(330199,49)'><em></em><span>L</span><a id='brand_49'  href='/2sc/list-330199-49-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>路虎</a></h3></li><li id='b50'   name='L_child' ><h3 onclick='OpenBrandLi(330199,50)'><em></em><span>L</span><a id='brand_50'  href='/2sc/list-330199-50-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>路特斯</a></h3></li><li id='b51'   name='L_child' ><h3 onclick='OpenBrandLi(330199,51)'><em></em><span>L</span><a id='brand_51'  href='/2sc/list-330199-51-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>林肯</a></h3></li><li id='b52'   name='L_child' ><h3 onclick='OpenBrandLi(330199,52)'><em></em><span>L</span><a id='brand_52'  href='/2sc/list-330199-52-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>雷克萨斯</a></h3></li><li id='b53'   name='L_child' ><h3 onclick='OpenBrandLi(330199,53)'><em></em><span>L</span><a id='brand_53'  href='/2sc/list-330199-53-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>铃木</a></h3></li><li id='b54'   name='L_child' ><h3 onclick='OpenBrandLi(330199,54)'><em></em><span>L</span><a id='brand_54'  href='/2sc/list-330199-54-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>劳斯莱斯</a></h3></li><li id='b88'   name='L_child' ><h3 onclick='OpenBrandLi(330199,88)'><em></em><span>L</span><a id='brand_88'  href='/2sc/list-330199-88-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>陆风</a></h3></li><li id='b89'   name='L_child' ><h3 onclick='OpenBrandLi(330199,89)'><em></em><span>L</span><a id='brand_89'  href='/2sc/list-330199-89-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>莲花汽车</a></h3></li><li id='b80'   name='L_child' ><h3 onclick='OpenBrandLi(330199,80)'><em></em><span>L</span><a id='brand_80'  href='/2sc/list-330199-80-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>力帆</a></h3></li><li id='b78'   name='L_child' ><h3 onclick='OpenBrandLi(330199,78)'><em></em><span>L</span><a id='brand_78'  href='/2sc/list-330199-78-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>猎豹汽车</a></h3></li><li id='b124'   name='L_child' ><h3 onclick='OpenBrandLi(330199,124)'><em></em><span>L</span><a id='brand_124'  href='/2sc/list-330199-124-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>理念</a></h3></li><li id='b129'   name='M_first' ><h3 onclick='OpenBrandLi(330199,129)'><em></em><span>M</span><a id='brand_129'  href='/2sc/list-330199-129-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>迈凯伦</a></h3></li><li id='b56'   name='M_child' ><h3 onclick='OpenBrandLi(330199,56)'><em></em><span>M</span><a id='brand_56'  href='/2sc/list-330199-56-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>MINI</a></h3></li><li id='b57'   name='M_child' ><h3 onclick='OpenBrandLi(330199,57)'><em></em><span>M</span><a id='brand_57'  href='/2sc/list-330199-57-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>玛莎拉蒂</a></h3></li><li id='b58'   name='M_child' ><h3 onclick='OpenBrandLi(330199,58)'><em></em><span>M</span><a id='brand_58'  href='/2sc/list-330199-58-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>马自达</a></h3></li><li id='b20'   name='M_child' ><h3 onclick='OpenBrandLi(330199,20)'><em></em><span>M</span><a id='brand_20'  href='/2sc/list-330199-20-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>MG</a></h3></li><li id='b130'   name='N_first' ><h3 onclick='OpenBrandLi(330199,130)'><em></em><span>N</span><a id='brand_130'  href='/2sc/list-330199-130-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>纳智捷</a></h3></li><li id='b146'   name='O_first' ><h3 onclick='OpenBrandLi(330199,146)'><em></em><span>O</span><a id='brand_146'  href='/2sc/list-330199-146-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>欧朗</a></h3></li><li id='b59'   name='O_child' ><h3 onclick='OpenBrandLi(330199,59)'><em></em><span>O</span><a id='brand_59'  href='/2sc/list-330199-59-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>欧宝</a></h3></li><li id='b60'   name='O_child' ><h3 onclick='OpenBrandLi(330199,60)'><em></em><span>O</span><a id='brand_60'  href='/2sc/list-330199-60-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>讴歌</a></h3></li><li id='b62'   name='Q_first' ><h3 onclick='OpenBrandLi(330199,62)'><em></em><span>Q</span><a id='brand_62'  href='/2sc/list-330199-62-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>起亚</a></h3></li><li id='b26'   name='Q_child' ><h3 onclick='OpenBrandLi(330199,26)'><em></em><span>Q</span><a id='brand_26'  href='/2sc/list-330199-26-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>奇瑞</a></h3></li><li id='b122'   name='Q_child' ><h3 onclick='OpenBrandLi(330199,122)'><em></em><span>Q</span><a id='brand_122'  href='/2sc/list-330199-122-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>启辰</a></h3></li><li id='b103'   name='R_first' ><h3 onclick='OpenBrandLi(330199,103)'><em></em><span>R</span><a id='brand_103'  href='/2sc/list-330199-103-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>瑞麒</a></h3></li><li id='b174'   name='R_child' ><h3 onclick='OpenBrandLi(330199,174)'><em></em><span>R</span><a id='brand_174'  href='/2sc/list-330199-174-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>如虎</a></h3></li><li id='b19'   name='R_child' ><h3 onclick='OpenBrandLi(330199,19)'><em></em><span>R</span><a id='brand_19'  href='/2sc/list-330199-19-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>荣威</a></h3></li><li id='b63'   name='R_child' ><h3 onclick='OpenBrandLi(330199,63)'><em></em><span>R</span><a id='brand_63'  href='/2sc/list-330199-63-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>日产</a></h3></li><li id='b64'   name='S_first' ><h3 onclick='OpenBrandLi(330199,64)'><em></em><span>S</span><a id='brand_64'  href='/2sc/list-330199-64-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>萨博</a></h3></li><li id='b65'   name='S_child' ><h3 onclick='OpenBrandLi(330199,65)'><em></em><span>S</span><a id='brand_65'  href='/2sc/list-330199-65-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>斯巴鲁</a></h3></li><li id='b66'   name='S_child' ><h3 onclick='OpenBrandLi(330199,66)'><em></em><span>S</span><a id='brand_66'  href='/2sc/list-330199-66-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>世爵</a></h3></li><li id='b67'   name='S_child' ><h3 onclick='OpenBrandLi(330199,67)'><em></em><span>S</span><a id='brand_67'  href='/2sc/list-330199-67-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>斯柯达</a></h3></li><li id='b68'   name='S_child' ><h3 onclick='OpenBrandLi(330199,68)'><em></em><span>S</span><a id='brand_68'  href='/2sc/list-330199-68-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>三菱</a></h3></li><li id='b69'   name='S_child' ><h3 onclick='OpenBrandLi(330199,69)'><em></em><span>S</span><a id='brand_69'  href='/2sc/list-330199-69-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>双龙</a></h3></li><li id='b45'   name='S_child' ><h3 onclick='OpenBrandLi(330199,45)'><em></em><span>S</span><a id='brand_45'  href='/2sc/list-330199-45-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>smart</a></h3></li><li id='b90'   name='S_child' ><h3 onclick='OpenBrandLi(330199,90)'><em></em><span>S</span><a id='brand_90'  href='/2sc/list-330199-90-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>双环</a></h3></li><li id='b173'   name='S_child' ><h3 onclick='OpenBrandLi(330199,173)'><em></em><span>S</span><a id='brand_173'  href='/2sc/list-330199-173-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>绅宝</a></h3></li><li id='b149'   name='S_child' ><h3 onclick='OpenBrandLi(330199,149)'><em></em><span>S</span><a id='brand_149'  href='/2sc/list-330199-149-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>陕汽通家</a></h3></li><li id='b162'   name='S_child' ><h3 onclick='OpenBrandLi(330199,162)'><em></em><span>S</span><a id='brand_162'  href='/2sc/list-330199-162-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>思铭</a></h3></li><li id='b155'   name='S_child' ><h3 onclick='OpenBrandLi(330199,155)'><em></em><span>S</span><a id='brand_155'  href='/2sc/list-330199-155-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>上汽大通</a></h3></li><li id='b167'   name='W_first' ><h3 onclick='OpenBrandLi(330199,167)'><em></em><span>W</span><a id='brand_167'  href='/2sc/list-330199-167-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>五十铃</a></h3></li><li id='b114'   name='W_child' ><h3 onclick='OpenBrandLi(330199,114)'><em></em><span>W</span><a id='brand_114'  href='/2sc/list-330199-114-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>五菱汽车</a></h3></li><li id='b102'   name='W_child' ><h3 onclick='OpenBrandLi(330199,102)'><em></em><span>W</span><a id='brand_102'  href='/2sc/list-330199-102-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>威麟</a></h3></li><li id='b70'   name='W_child' ><h3 onclick='OpenBrandLi(330199,70)'><em></em><span>W</span><a id='brand_70'  href='/2sc/list-330199-70-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>沃尔沃</a></h3></li><li id='b71'   name='X_first' ><h3 onclick='OpenBrandLi(330199,71)'><em></em><span>X</span><a id='brand_71'  href='/2sc/list-330199-71-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>雪佛兰</a></h3></li><li id='b72'   name='X_child' ><h3 onclick='OpenBrandLi(330199,72)'><em></em><span>X</span><a id='brand_72'  href='/2sc/list-330199-72-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>雪铁龙</a></h3></li><li id='b12'   name='X_child' ><h3 onclick='OpenBrandLi(330199,12)'><em></em><span>X</span><a id='brand_12'  href='/2sc/list-330199-12-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>现代</a></h3></li><li id='b98'   name='X_child' ><h3 onclick='OpenBrandLi(330199,98)'><em></em><span>X</span><a id='brand_98'  href='/2sc/list-330199-98-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>西雅特</a></h3></li><li id='b185'   name='X_child' ><h3 onclick='OpenBrandLi(330199,185)'><em></em><span>X</span><a id='brand_185'  href='/2sc/list-330199-185-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>新凯</a></h3></li><li id='b110'   name='Y_first' ><h3 onclick='OpenBrandLi(330199,110)'><em></em><span>Y</span><a id='brand_110'  href='/2sc/list-330199-110-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>一汽</a></h3></li><li id='b111'   name='Y_child' ><h3 onclick='OpenBrandLi(330199,111)'><em></em><span>Y</span><a id='brand_111'  href='/2sc/list-330199-111-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>野马汽车</a></h3></li><li id='b144'   name='Y_child' ><h3 onclick='OpenBrandLi(330199,144)'><em></em><span>Y</span><a id='brand_144'  href='/2sc/list-330199-144-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>依维柯</a></h3></li><li id='b93'   name='Y_child' ><h3 onclick='OpenBrandLi(330199,93)'><em></em><span>Y</span><a id='brand_93'  href='/2sc/list-330199-93-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>永源</a></h3></li><li id='b73'   name='Y_child' ><h3 onclick='OpenBrandLi(330199,73)'><em></em><span>Y</span><a id='brand_73'  href='/2sc/list-330199-73-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>英菲尼迪</a></h3></li><li id='b74'   name='Z_first' ><h3 onclick='OpenBrandLi(330199,74)'><em></em><span>Z</span><a id='brand_74'  href='/2sc/list-330199-74-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>中兴</a></h3></li><li id='b22'   name='Z_child' ><h3 onclick='OpenBrandLi(330199,22)'><em></em><span>Z</span><a id='brand_22'  href='/2sc/list-330199-22-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>中华</a></h3></li><li id='b94'   name='Z_child' ><h3 onclick='OpenBrandLi(330199,94)'><em></em><span>Z</span><a id='brand_94'  href='/2sc/list-330199-94-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html'>众泰</a></h3></li>
+       </ul>
+        <div id="carBottom" style="height: 600px;"></div>
+    </div>
+    
+</div>
+<!--左侧导航树结束-->
+<script type="text/javascript">
+
+    var liIndex=0;
+    if(parseInt(liIndex)>0)
+    {
+        if (document.getElementById('b' + 33) != null) {
+            setTimeout(function () {
+                document.getElementById('frame_tree').scrollTop = parseInt(parseInt(liIndex) * 24); 
+            }, 10)
+        }    
+    }
+    document.getElementById("ulTree").style.display="";
+</script>
+
+<script type="text/javascript">
+    function OpenBrandLi(area, id) {
+        var obj = document.getElementById("bl" + id);
+        if (obj == null) {
+            location.href = "/2sc/list-" + area + "-" + id + "-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html";
+        }
+        else {
+            if (obj.style.display == "block" || obj.style.display == "") {
+                document.getElementById("b" + id).className = "";
+                obj.style.display = "none";
+            }
+            else {
+                document.getElementById("b" + id).className = "openli";
+                obj.style.display = "block"
+            }
+        }
+        
+    }
+
+    Function.prototype.bind = function (bindObj, args) { var _self = this; return function () { return _self.apply(bindObj, [].concat(args)); }; };
+    function AddLetterEvent(ulId) {
+        function LetterClick() {
+            var obj = this;
+            var list = document.getElementById(ulId).getElementsByTagName("li");
+            for (var i = 0; i < list.length; i++) {
+                if (!list[i].getElementsByTagName("a")[0].getAttribute("stop")) {
+                    list[i].className = "";
+                }
+                else {
+                    list[i].className = "none";
+                }
+            }
+            obj.className = "hot";
+            MoveTo(obj.getElementsByTagName("a")[0].name);
+        }
+        var list = document.getElementById(ulId).getElementsByTagName("li");
+        for (var i = 0; i < list.length; i++) {
+            var objli = list[i];
+            if (!list[i].getElementsByTagName("a")[0].getAttribute("stop")) {
+                if (window.addEventListener) {
+                    objli.addEventListener("click", LetterClick.bind(objli, [objli]), false);
+                } else if (window.attachEvent) {
+                    objli.attachEvent("onclick", LetterClick.bind(objli, [objli]));
+                }
+            }
+        }
+    }
+    var getElementsByName = function (tag, name) {
+        var returns = document.getElementsByName(name);
+        if (returns.length > 0) return returns;
+        returns = new Array();
+        var e = document.getElementsByTagName(tag);
+        for (var i = 0; i < e.length; i++) {
+            if (e[i].getAttribute("name") == name) {
+                returns[returns.length] = e[i];
+            }
+        }
+        return returns;
+    }
+    function MoveTo(fLetter) {
+        var bid;
+        var div_array;
+        if(getElementsByName("li", fLetter + "_first").length==0) return false;
+        if (getElementsByName("li", fLetter + "_first")[0].getAttribute("id") != null) {
+            bid = getElementsByName("li", fLetter + "_first")[0].getAttribute("id");
+        }
+        var offsetTop = document.getElementById(bid).offsetTop;
+        document.getElementById("frame_tree").scrollTop = offsetTop;
+
+        //选中字母背景
+        var divName = fLetter + "_child";
+        var divFirst = fLetter + "_first";
+        div_Letter = document.getElementById("frame_tree").getElementsByTagName("li");
+        for (j = 0; j < div_Letter.length; j++) {
+            //首字母以下字母背景
+            if (div_Letter[j].getAttribute("name") != null) {
+                var cn = div_Letter[j].style.cssText;
+                if (div_Letter[j].getAttribute("name") == divName || div_Letter[j].getAttribute("name") == divFirst) {
+                    div_Letter[j].style.cssText = "background-color:#EAF1F9;";
+                }
+                else {
+                    div_Letter[j].style.cssText = "";
+                }
+            }
+        }
+    }
+    function h3MouseEvent() {
+        function h3MouseOver() {
+            this.style.backgroundColor = "#d9e6f6";
+            if (this.getElementsByTagName("a")[0] != undefined) {
+                this.getElementsByTagName("a")[0].style.color = "#d60000";
+            }
+        }
+        function h3MouseOut() {
+            this.style.backgroundColor = "";
+            if (this.getElementsByTagName("a")[0] != undefined) {
+                this.getElementsByTagName("a")[0].style.color = "";
+            }
+        }
+        var list = document.getElementById("frame_tree").getElementsByTagName("li");
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].className == "") {
+                var objh3 = list[i].getElementsByTagName("h3")[0];
+                if (objh3) {
+                    if (window.addEventListener) {
+                        objh3.addEventListener("mouseover", h3MouseOver.bind(objh3, [objh3]), false);
+                        objh3.addEventListener("mouseout", h3MouseOut.bind(objh3, [objh3]), false);
+                    } else if (window.attachEvent) {
+                        objh3.attachEvent("onmouseover", h3MouseOver.bind(objh3, [objh3]));
+                        objh3.attachEvent("onmouseout", h3MouseOut.bind(objh3, [objh3]));
+                    }
+                }
+            }
+        }
+    }
+    AddLetterEvent("navul");
+    h3MouseEvent();
+
+    function fnHCarBottom() {
+        var o = document.getElementById('frame_tree');
+        var h = document.documentElement.clientHeight;
+        o.style.height = (h - 70) + 'px';
+        document.getElementById('carBottom').style.height = (h - 150) + 'px';
+    }
+    function winResize() {
+        fnHCarBottom();
+    }
+    var appName = navigator.appName.toLowerCase();
+    if (appName != 'netscape') {
+        fnHCarBottom();
+        if (window.frameElement != null) {
+            window.frameElement.attachEvent("onresize", winResize);
+        }
+        else {
+            window.attachEvent("onresize", winResize);
+        }
+    }
+    else {
+        fnHCarBottom();
+        if (window.frameElement != null) {
+            window.frameElement.addEventListener("resize", winResize, false);
+        }
+        else {
+            window.addEventListener("resize", winResize, false);
+        }
+    }
+
+</script>
+
+
+
+    <!--leftend-->
+    <!--右侧内容开始-->
+    <div class="frame_right">
+        <!--star-->
+        <div class="priceWrap">
+            <div class="price780">
+                <div class="content">
+                    <!--广告-->
+                    <div class="advertise">
+                        <div id="ad_660_1">
+                        </div>
+                        <div id="ad_660_2">
+                        </div>
+                    </div>
+                    <!--end广告-->
+                    <!--快速搜索-->
+                    
+<!--end banner start搜索-->
+    <div class="mt15 clearfix">
+    	<div class="search fl" style="position:relative; z-index:100;">
+        <div class="citymain">
+        	<div class="citymainout" id="divCity"  onclick ="this.className='citymainover';var obj= document.getElementById('liCustomPrice'); if(obj){obj.className='cmoreno';}"  >
+                <div class="fl city" >
+                    <p class="citycon"><strong class="citytxt font14"></strong>切换省市<em class="cityico">&nbsp;</em></p>
+                </div>
+                <!--start提示浮层-->
+                <div class="cityfc">
+                <!--[if IE]><iframe  frameborder="0" class="cityie6"></iframe><![endif]-->
+                    <div class="citycont">
+                	<p class="citytit"><a href="/2sc/list-1-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">全国</a><a href="/2sc/list-440000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">广东</a><a href="/2sc/list-370000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">山东</a><a href="/2sc/list-330000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">浙江</a><a href="/2sc/list-320000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">江苏</a><a href="/2sc/list-130000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">河北</a><a href="/2sc/list-410000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">河南</a><a href="/2sc/list-110000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">北京</a><a href="/2sc/list-210000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">辽宁</a><a href="/2sc/list-340000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">安徽</a><a href="/2sc/list-310000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">上海</a></p>
+                    <ul class="cityul">
+                    	<li><span>A</span><p><a href="/2sc/list-340000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">安徽</a></p></li>
+                        <li><span>B</span><p><a href="/2sc/list-110000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">北京</a></p></li>
+                        <li><span>C</span><p><a href="/2sc/list-500000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">重庆</a></p></li>
+                        <li><span>F</span><p><a href="/2sc/list-350000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">福建</a></p></li>
+                        <li><span>G</span><p><a href="/2sc/list-440000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">广东</a><a href="/2sc/list-450000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">广西</a><a href="/2sc/list-520000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">贵州</a><a href="/2sc/list-620000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">甘肃</a></p></li>
+                        <li><span>H</span><p><a href="/2sc/list-460000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">海南</a><a href="/2sc/list-410000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">河南</a><a href="/2sc/list-420000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">湖北</a><a href="/2sc/list-430000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">湖南</a><a href="/2sc/list-130000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">河北</a><a href="/2sc/list-230000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">黑龙江</a></p></li>
+                        <li><span>L</span><p><a href="/2sc/list-210000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">辽宁</a></p></li>
+                    </ul>
+                    <ul class="cityul">
+                    	<li><span>N</span><p><a href="/2sc/list-150000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">内蒙古</a><a href="/2sc/list-640000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">宁夏</a></p></li>
+                        <li><span>Q</span><p><a href="/2sc/list-630000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">青海</a></p></li>
+                        <li><span>S</span><p><a href="/2sc/list-610000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">陕西</a><a href="/2sc/list-510000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">四川</a><a href="/2sc/list-310000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">上海</a><a href="/2sc/list-140000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">山西</a><a href="/2sc/list-370000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">山东</a></p></li>
+                        <li><span>T</span><p><a href="/2sc/list-120000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">天津</a></p></li>
+                        <li><span>X</span><p><a href="/2sc/list-540000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">西藏</a><a href="/2sc/list-650000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">新疆</a></p></li>
+                        <li><span>Y</span><p><a href="/2sc/list-530000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">云南</a></p></li>
+                        <li><span>J</span><p><a href="/2sc/list-320000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">江苏</a><a href="/2sc/list-360000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">江西</a><a href="/2sc/list-220000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">吉林</a></p></li>
+                        <li><span>Z</span><p><a href="/2sc/list-330000-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">浙江</a></p></li>
+                    </ul>
+                    </div>
+                </div>
+                <!--end提示浮层-->
+            </div>
+            </div>
+            <form target="_self" action="/2sc/Che168/Ashx/SearchByKeyWord.ashx" name="soform" id="souform" class="fl">
+        	<p class="fl"><input type="text"  id="kw" autocomplete="off" onclick="acOnClick()" onblur="acOnBlur()";   value="请输入品牌车型" style=" color:#5D5D5D;" class="searchinp" name="kw" /><input type="hidden" id="area" name="area" value="330199" /></p>
+            <p class="fl"><input type="button"  onclick="onSearch()" value="搜 索" class="searchbut" /></p>
+            </form>
+            <div id="autocomplateTip" class="slt_lxc searchtc" style="display: none;"> </div>
+        </div>
+        <div class="hotcs fl"><span class="fontb">热词：</span><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">奥迪A6L</a><a href="/2sc/list-330199-14-78-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">雅阁</a><a href="/2sc/list-330199-15-65-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">宝马5系</a></div>
+        <script type="text/javascript" language="javascript">
+            function onSearch() {
+                var val = document.getElementById("souform").getElementsByTagName("input")[0].value;
+                val = val.replace(/(^\s*)(\s*$)/g, "");
+                val = val.replace(/(<|>)/g, "");
+                if (val != "" && val != "请输入品牌车型") {
+                    document.getElementById("souform").getElementsByTagName("input")[0].value = val;
+                    document.getElementById("souform").submit();
+                }
+            }
+            function acOnFocus() {
+                var script = document.createElement("script");
+                script.src = "http://sou.autohome.com.cn/js/autocomplate_newcarprice.js?v10";
+                script.onreadystatechange = script.onload = function () {
+                    if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                        if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")
+                            Sou.Autocomplate.AddAutocomplate(document.getElementById("souform").getElementsByTagName("input")[0]);
+                    }
+                }
+                document.getElementsByTagName("head")[0].appendChild(script);
+                document.getElementById("souform").getElementsByTagName("input")[0].onfocus = "";
+            }
+            document.getElementById("souform").getElementsByTagName("input")[0].onfocus = acOnFocus;
+            function acOnClick() {
+                var obj = document.getElementById("souform").getElementsByTagName("input")[0];
+                if (obj.value == "请输入品牌车型") {
+                    obj.value = "";
+                }
+            }
+            function acOnBlur() {
+                var obj = document.getElementById("souform").getElementsByTagName("input")[0];
+                if (obj.value == "") {
+                    obj.value = "请输入品牌车型";
+                }
+            }
+    </script>
+    </div>
+    <!--end搜索start分类-->
+
+                    <!--end快速搜索-->
+                    <h2 class="contit mt15 overflow" id="hShowCondition"  ><p class="contj fl">&nbsp;</p><p class="fl mr5"><strong>已选条件：</strong></p><span class="sel_term"  >奥迪<a href="/2sc/list-330199-0-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html"></a></span><span class="sel_term"  >奥迪A6L<a href="/2sc/list-330199-33-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html"></a></span><a style=" font-size: 12px;" href="/2sc/list-1-0-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">清除所有条件</a></h2>
+
+    <div class="conmain conmains" style="display:none;" id="divShowCondition">
+        <div class="condition clearfix"><h4 class="ctit">按&nbsp;价&nbsp;格</h4><ul class="cmain clearfix"><li><a href="/2sc/list-330199-33-18-0-8_10-0-0-0-0-0-0-0-0-0-0-0-1.html">8-10万</a></li><li><a href="/2sc/list-330199-33-18-0-10_15-0-0-0-0-0-0-0-0-0-0-0-1.html">10-15万</a></li><li><a href="/2sc/list-330199-33-18-0-15_20-0-0-0-0-0-0-0-0-0-0-0-1.html">15-20万</a></li><li><a href="/2sc/list-330199-33-18-0-20_30-0-0-0-0-0-0-0-0-0-0-0-1.html">20-30万</a></li><li><a href="/2sc/list-330199-33-18-0-30_50-0-0-0-0-0-0-0-0-0-0-0-1.html">30-50万</a></li><li><a href="/2sc/list-330199-33-18-0-50_0-0-0-0-0-0-0-0-0-0-0-0-1.html">50万以上</a></li><li class="cmoreno" id="liCustomPrice" ><div class="positionr"><a style="cursor:pointer;" class="mach">自定义<b></b></a> <div id="Cmotc" class="cmdy"><input type="text" maxlength='3' id="txtMinPrice" value="" class="cmdyinp" />&nbsp;至&nbsp;<input type="text" id="txtMaxPrice" maxlength='3' value="" class="cmdyinp" />&nbsp;万元&nbsp;<input type="button" value="确定" class="cursor" style="width:40px;" onclick="SearchCustomPrice();" /></div></div></li></ul></div>
+        
+        <div class="condition clearfix"><h4 class="ctit">按&nbsp;车&nbsp;龄</h4><ul class="cmain clearfix"><li><a href="/2sc/list-330199-33-18-0-0_0-1-0-0-0-0-0-0-0-0-0-0-1.html">1年及以内</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-2-0-0-0-0-0-0-0-0-0-0-1.html">1-3年</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-3-0-0-0-0-0-0-0-0-0-0-1.html">3-5年</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-4-0-0-0-0-0-0-0-0-0-0-1.html">5-8年</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-5-0-0-0-0-0-0-0-0-0-0-1.html">8-10年</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-6-0-0-0-0-0-0-0-0-0-0-1.html">10年以上</a></li></ul></div>
+        <div class="condition clearfix"><h4 class="ctit">按&nbsp;里&nbsp;程</h4><ul class="cmain clearfix"><li><a href="/2sc/list-330199-33-18-0-0_0-0-1-0-0-0-0-0-0-0-0-0-1.html">1万公里及以内</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-2-0-0-0-0-0-0-0-0-0-1.html">1-3万公里</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-3-0-0-0-0-0-0-0-0-0-1.html">3-6万公里</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-4-0-0-0-0-0-0-0-0-0-1.html">6万公里以上</a></li></ul></div>
+        <div class="condition clearfix"><h4 class="ctit">按变速箱</h4><ul class="cmain clearfix"><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-1-0-0-0-0-0-0-0-0-1.html">手动</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-2-0-0-0-0-0-0-0-0-1.html">自动</a></li></ul></div>
+        <div class="condition clearfix"><h4 class="ctit">按&nbsp;排&nbsp;量</h4><ul class="cmain w484 clearfix"><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-1-0-0-0-0-0-0-0-1.html">1.0L及以下</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-3-0-0-0-0-0-0-0-1.html">1.7-2.0L</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-4-0-0-0-0-0-0-0-1.html">2.1-2.5L</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-5-0-0-0-0-0-0-0-1.html">2.6-3.0L</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-6-0-0-0-0-0-0-0-1.html">3.1-4.0L</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-7-0-0-0-0-0-0-0-1.html">4.0L以上</a></li></ul></div>
+         <div class="conditino clearfix"><h4 class="ctit">按&nbsp;颜&nbsp;色</h4><ul class="cmain w484 clearfix"><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html"></a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-1-0-0-0-0-0-0-1.html">黑色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-2-0-0-0-0-0-0-1.html">白色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-3-0-0-0-0-0-0-1.html">银灰色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-4-0-0-0-0-0-0-1.html">深灰色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-5-0-0-0-0-0-0-1.html">红色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-6-0-0-0-0-0-0-1.html">蓝色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-7-0-0-0-0-0-0-1.html">绿色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-9-0-0-0-0-0-0-1.html">香槟色</a></li><li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-11-0-0-0-0-0-0-1.html">其它</a></li></ul></div>
+    </div>
+    <script type="text/javascript">
+        function Che168SetCookie(name, value) {
+            var expire_days = 30; //(保存的天数)   
+            var expire_date = new Date();   //new   Date("December   31,   3666");//长期有效的办法   
+            var ms_from_now = expire_days * 24 * 60 * 60 * 1000;
+            expire_date.setTime(expire_date.getTime() + ms_from_now);
+            var expire_string = expire_date.toGMTString();
+            document.cookie = name + "=" + escape(value) + ";expires=" + expire_string + ";path=/";
+        }
+        function Che168DelCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            document.cookie = name + "=; expires=" + exp.toGMTString() + ";path=/";
+        }
+        //条件展开或收起
+        function onShowCondition(obj) {
+            if (obj.className == "contito mt15 overflow") {
+                document.getElementById("divShowCondition").style.display = "none";
+                obj.className = "contit mt15 overflow";
+                document.getElementById("hShowCondition").childNodes[0].className = "contj fl";
+                Che168SetCookie("Che168ConditionIsDisplay", "none");
+            }
+            else {
+                document.getElementById("divShowCondition").style.display = "";
+                obj.className = "contito mt15 overflow";
+                document.getElementById("hShowCondition").childNodes[0].className = "contjs fl";
+                Che168DelCookie("Che168ConditionIsDisplay");
+            }
+        }
+        var conditionIsDisplay = che168ReadCookie("Che168ConditionIsDisplay", "");
+        if (conditionIsDisplay != "none") {
+            document.getElementById("hShowCondition").className = "contito mt15 overflow";
+            document.getElementById("divShowCondition").style.display = "";
+            document.getElementById("hShowCondition").childNodes[0].className = "contjs fl";
+        }
+
+        var divShowCondition = document.getElementById("divShowCondition");
+        var innerHtml = divShowCondition.innerHTML.replace(/(^\s*)|(\s*$)/g, "");
+        if (innerHtml == '') {
+            divShowCondition.style.display = "none";
+        }
+        //自定义价格搜索
+        function SearchCustomPrice() {
+            var maxPrice = document.getElementById("txtMaxPrice").value;
+            var minPrice = document.getElementById("txtMinPrice").value;
+            if (maxPrice == "" && maxPrice == minPrice) {
+                alert("价格不允许同时为空");
+                return false;
+            }
+            if (maxPrice == "") {
+                maxPrice = 0;
+            }
+            if (minPrice == "") {
+                minPrice = 0;
+            }
+            var reg = /^[0-9]\d*$/;
+            if (!reg.test(maxPrice) || !reg.test(minPrice)) {
+                alert("价格必须是正整数");
+                return false;
+            }
+            if (parseInt(minPrice) == parseInt(maxPrice)) {
+                if (parseInt(minPrice) <= 0) {
+                    alert("价格不允许同时为0");
+                    return false;
+                }
+            }
+            if (parseInt(minPrice) > parseInt(maxPrice) && parseInt(maxPrice) > 0) {
+                alert("结束价格必须大于起始价格");
+                return false;
+            }
+            if (parseInt(minPrice) > 999 || parseInt(maxPrice) > 999) {
+                alert("价格必须小于1000");
+                return false;
+            }
+
+            maxPrice = maxPrice + ".00";
+            minPrice = minPrice + ".00";
+            var url = location.href;
+            if (url.indexOf("index.html") > 0) {
+                url = "/2sc/list-0-0-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html";
+            }
+            url = url.substring(url.lastIndexOf('/'), url.lastIndexOf('-'));
+            var arrUrl = url.split('-');
+            arrUrl[1] = document.getElementById("area").value;
+            arrUrl[5] = minPrice + "_" + maxPrice;
+            url = "/2sc";
+            for (var i = 0; i < arrUrl.length; i++) {
+                url += arrUrl[i] + "-";
+            }
+            location.href = url + "1.html";
+        }
+        //显示或收起自定义价格提示框
+        document.body.onclick = function (evt) {
+            var li = document.getElementById("liCustomPrice");
+            var div = document.getElementById("divCity");
+            if (evt) {//不是ie
+                var obj = evt.target.parentNode;
+                if (obj.className != "positionr" && obj.className != "cmdy" && obj.className != "mach" && obj.className != "mach ccb020c fontb") {
+                    if (li != null) {
+                        li.className = "cmoreno";
+                    }
+                }
+                else {
+                    if (obj.className == "positionr" && li.className == "cmore hover") {
+                        li.className = "cmoreno";
+                    }
+                    else {
+                        li.className = "cmore hover";
+                    }
+                }
+                if (obj.className != "citycon" && obj.className != "fl city" && obj.className != "cityul" && obj.className != "citymainover") {
+                    div.className = "citymainout";
+                }
+                else {
+                    div.className = "citymainover";
+                }
+            } else if (window.event) {//ie
+                var obj = window.event.srcElement.parentNode;
+                if (obj.className != "positionr" && obj.className != "cmdy" && obj.className != "mach" && obj.className != "mach ccb020c fontb") {
+                    if (li != null) {
+                        li.className = "cmoreno";
+                    }
+                }
+                else {
+                    if (obj.className == "positionr" && li.className == "cmore hover") {
+                        li.className = "cmoreno";
+                    }
+                    else {
+                        li.className = "cmore hover";
+                    }
+                }
+                if (obj.className != "citycon" && obj.className != "fl city" && obj.className != "cityul" && obj.className != "citymainover") {
+                    div.className = "citymainout";
+                }
+                else {
+                    div.className = "citymainover";
+                }
+            }
+        }
+    </script>
+                    <!--end分类strart选项卡-->
+                    <div class="condcon mt10">
+                        <ul id="myTab1" class="cytab">
+                            <li class="active" ><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html">全部车源</a> </li><li class="normal" ><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-1-0-0-0-0-0-1.html">个人车源</a> </li><li class="normal" ><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-2-0-0-0-0-0-1.html">商家车源</a> </li><li class="normal" ><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-3-0-0-0-0-0-1.html">品牌车源</a> </li>
+                        </ul>
+
+                        <div class="txtr area">
+                            <span style="display: none;" class='mr10'>
+                                <input type="checkbox" onclick="CheckBoxClick(14)"  style="vertical-align: middle; margin: -3px 3px 0px 6px;"><label>准新车</label>
+                            </span><span style="display: none;" class='mr10'>
+                                <input type="checkbox" onclick="CheckBoxClick(12)"  style="vertical-align: middle; margin: -3px 3px 0px 6px;"><label>只看有图</label>
+                            </span><span class='mr10' style="margin-right: 16px;">
+                                <input style="display: none;" type="checkbox" onclick="CheckBoxClick(15)"  style="vertical-align: middle; margin: -3px 3px 0px 6px;"><label style="display: none;">只看在售</label>
+                            </span>所在地：<select id="selectCity" onchange="SelectCity()" style="width: 96px;"><option value="1">选择城市</option><option value="340000">A 安徽</option><option value="110000">B 北京</option><option value="500000">C 重庆</option><option value="350000">F 福建</option><option value="440000">G 广东</option><option value="450000">G 广西</option><option value="520000">G 贵州</option><option value="620000">G 甘肃</option><option value="460000">H 海南</option><option value="410000">H 河南</option><option value="420000">H 湖北</option><option value="430000">H 湖南</option><option value="130000">H 河北</option><option value="230000">H 黑龙江</option><option value="320000">J 江苏</option><option value="360000">J 江西</option><option value="220000">J 吉林</option><option value="210000">L 辽宁</option><option value="150000">N 内蒙古</option><option value="640000">N 宁夏</option><option value="630000">Q 青海</option><option value="610000">S 陕西</option><option value="510000">S 四川</option><option value="310000">S 上海</option><option value="140000">S 山西</option><option value="370000">S 山东</option><option value="120000">T 天津</option><option value="650000">X 新疆</option><option value="530000">Y 云南</option><option value="330000">Z 浙江</option></select>
+                        </div>
+                        <!--start选项卡TAB-->
+
+                        <ul class="arrangul overflow">
+                            <li class="lselect">
+                                <select onchange="SelectStoreClick(this.value)" style="margin-left: 16px; height: 22px;" id="selectStore">
+                                    <option value="0">默认排序</option>
+                                    <option value="1">按价格从高到低</option>
+                                    <option value="2">按价格从低到高</option>
+                                    <option value="6">按上牌日期从近到远</option>
+                                    <option value="3">按信息完整度从高到低</option>
+                                    <option value="4">按发布日期从近到远</option>
+                                    <option value="5">按里程从少到多</option>
+                                </select>
+                            </li>
+                            <li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-3-0-0-0-1.html">资料完整度<em class="arrhdown">&nbsp;</em></a></li>
+                            <li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-4-0-0-0-1.html">发布日期<em class="arrhdown">&nbsp;</em></a></li>
+                            <li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-5-0-0-0-1.html">里程<em class="arrdown">&nbsp;</em></a></li>
+                            <li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-6-0-0-0-1.html">上牌日期<em class="arrhdown">&nbsp;</em></a></li>
+                            <li><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-1-0-0-0-1.html">价格<em class="arrhdown">&nbsp;</em></a></li>
+                        </ul>
+                        <div>
+                            <ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/117521/2178279.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_4660937839678151549.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/117521/2178279.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2008款 2.4L 舒适型</a></p><p><span class="c000">2.4L自动&nbsp;|</span>&nbsp;苏州</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥20.60万</strong></li><li class="djdate">2008年</li><li class="licheng">8.4万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:95%;">&nbsp;</span></span><span class="ml5 scrbai">95%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/126749/2178760.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_4635536650154911103.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/126749/2178760.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2005款 2.0T 自动标准型</a></p><p><span class="c000">2.0L自动&nbsp;|</span>&nbsp;上海</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥15.00万</strong></li><li class="djdate">2006年</li><li class="licheng">13.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/76273/2178391.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5075638210791813176.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/76273/2178391.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2005款 3.0L 技术领先型</a></p><p><span class="c000">3.0L自动&nbsp;|</span>&nbsp;上海</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥15.58万</strong></li><li class="djdate">2005年</li><li class="licheng">8.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/79592/2177677.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_4841854064698398631.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/79592/2177677.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2012款 30 FSI 技术型</a></p><p><span class="c000">2.5L自动&nbsp;|</span>&nbsp;沈阳</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥44.80万</strong></li><li class="djdate">2013年</li><li class="licheng">0.4万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/83303/2178086.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5368085100612230264.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/83303/2178086.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2005款 2.0T 自动标准型</a></p><p><span class="c000">2.0L自动&nbsp;|</span>&nbsp;苏州</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥14.00万</strong></li><li class="djdate">2006年</li><li class="licheng">6.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/83303/2178004.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5608780523889601165.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/83303/2178004.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2005款 3.0L 技术领先型</a></p><p><span class="c000">3.0L自动&nbsp;|</span>&nbsp;苏州</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥17.80万</strong></li><li class="djdate">2007年</li><li class="licheng">4.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/129734/2178204.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5738855855641018372.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/129734/2178204.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2010款 2.8 FSI quattro 豪华型</a></p><p><span class="c000">2.8L自动&nbsp;|</span>&nbsp;上海</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥30.58万</strong></li><li class="djdate">2010年</li><li class="licheng">6.99万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/82362/2178071.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_4922985457272415238.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/82362/2178071.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2012款 TFSI 舒适型</a></p><p><span class="c000">2.0L自动&nbsp;|</span>&nbsp;上海</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥37.58万</strong></li><li class="djdate">2013年</li><li class="licheng">3.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/77888/2178072.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5718738134627824142.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/77888/2178072.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2009款 2.0 TFSI 自动标准型</a></p><p><span class="c000">2.0L自动&nbsp;|</span>&nbsp;哈尔滨</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥25.80万</strong></li><li class="djdate">2010年</li><li class="licheng">8.4万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/66191/2177693.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5366198884119054924.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/66191/2177693.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2011款 2.4L 豪华型</a></p><p><span class="c000">2.4L自动&nbsp;|</span>&nbsp;贵阳</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥34.86万</strong></li><li class="djdate">2012年</li><li class="licheng">3.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/68821/2177616.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5098038919408502685.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/68821/2177616.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2008款 2.4L 舒适型</a></p><p><span class="c000">2.4L自动&nbsp;|</span>&nbsp;济南</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥17.00万</strong></li><li class="djdate">2007年</li><li class="licheng">13.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/131962/2173294.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/27/l_5064803106543163717.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/131962/2173294.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2012款 TFSI 舒适型</a></p><p><span class="c000">2.0L自动&nbsp;|</span>&nbsp;郑州</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥41.80万</strong></li><li class="djdate">2013年</li><li class="licheng">0.6万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/73557/2177609.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_4693100971110133880.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/73557/2177609.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2009款 2.0 TFSI 手动标准型</a></p><p><span class="c000">2.0L手动&nbsp;|</span>&nbsp;成都</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥21.80万</strong></li><li class="djdate">2009年</li><li class="licheng">9.8万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul><ul class="listul bgf5"><li class="img"><a href="http://www.che168.com/dealer/78155/2177513.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2014/2/28/l_5059035342681109697.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/78155/2177513.html?pvareaid=100334" target="_blank" class="font14"> 奥迪A6L 2006款 3.2 FSI 舒适娱乐型</a></p><p><span class="c000">3.2L自动&nbsp;|</span>&nbsp;兰州</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥21.00万</strong></li><li class="djdate">2007年</li><li class="licheng">11.0万公里</li><li class="fbdate">2014-02-28</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:95%;">&nbsp;</span></span><span class="ml5 scrbai">95%</span></li></ul><ul class="listul"><li class="img"><a href="http://www.che168.com/dealer/118242/1766422.html?pvareaid=100334"  target="_blank" ><img src="http://www.autoimg.cn/2scimg/2013/12/8/l_5148035763080244531.jpg" /></a></li><li class="text"><p class="texttop"><a href="http://www.che168.com/dealer/118242/1766422.html?pvareaid=100334" target="_blank" class="font14">奥迪A6L 2010款 2.0 TFSI 自动标准型</a></p><p><span class="c000">2.0L自动&nbsp;|</span>&nbsp;大连</p><p class="mt5"><span class="icos">&nbsp;</span></p></li><li class="mach"><strong>￥27.50万</strong></li><li class="djdate">2010年</li><li class="licheng">7.0万公里</li><li class="fbdate">2013-12-08</li><li class="scrollbar"><span class="scrocon"><span class="scromain" style="width:100%;">&nbsp;</span></span><span class="ml5 scrbai">100%</span></li></ul>
+                        </div>
+                        <div class="pages">上一页&nbsp;<b>1</b>&nbsp;<a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-2.html">2</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-3.html">3</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-4.html">4</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-5.html">5</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-6.html">6</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-7.html">7</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-8.html">8</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-9.html">9</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-10.html">10</a><a href="/2sc/list-330199-33-18-0-0_0-0-0-0-0-0-0-0-0-0-0-0-2.html">下一页</a></div>
+                    </div>
+                    <!--end选项卡-->
+
+
+                </div>
+            </div>
+        </div>
+        <!--end-->
+
+    </div>
+    <!--rightend-->
+
+
+    <div id="ad_auto_jz_01" style="display: none">
+    </div>
+
+    <!--2013年10月15日添加反馈意见-->
+    <div class="gotop02" id="gotop">
+        <a class="gotop02-con" href="http://www.autohome.com.cn/bug/default.aspx" target="_blank">
+            <i class="icon-book"></i>
+            <span>意见反馈</span>
+        </a>
+        <a class="gotop02-con" href="#" id="backtop">
+            <i class="icon-top"></i>
+            <span>返回顶部</span>
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        var divShow = document.getElementById('backtop');
+        divShow.onclick = function () {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        }
+        function goTop() {
+            var wtop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (!!window.ActiveXObject && !window.XMLHttpRequest) {
+                var topOffset = 90;
+                document.getElementById("gotop").style.top = (wtop + parseInt(document.documentElement.clientHeight) - topOffset) + "px";
+            }
+            if (wtop > 0) {
+                document.getElementById("backtop").style.display = "";
+            } else {
+                document.getElementById("backtop").style.display = "none";
+            }
+        }
+        window.setInterval("goTop()", 100);
+    </script>
+
+    <script src="/JavaScript/AutoAjax.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       
+        //选择城市
+        function SelectCity() {
+            var url = location.href;            
+            url = url.substring(url.lastIndexOf('/'), url.lastIndexOf('-'));
+            var arrUrl = url.split('-');
+            arrUrl[1] = document.getElementById("selectCity").value;
+            url = "/2sc";
+            for (var i = 0; i < arrUrl.length; i++) {
+                url += arrUrl[i] + "-";
+            }
+            location.href = url + "1.html";
+        }
+        //精图
+        function CheckBoxClick(index) {
+            var url = location.href;
+            url = url.substring(url.lastIndexOf('/'), url.lastIndexOf('-'));
+            var arrUrl = url.split('-');
+            if (arrUrl[index] == 1) {
+                arrUrl[index] = 0;
+            }
+            else {
+                arrUrl[index] = 1;
+            }
+            url = "/2sc";
+            for (var i = 0; i < arrUrl.length; i++) {
+                url += arrUrl[i] + "-";
+            }
+            location.href = url + "1.html";
+        }
+        //排序
+        function SelectStoreClick(val) {
+            var url = location.href;
+            url = url.substring(url.lastIndexOf('/'), url.lastIndexOf('-'));
+            var arrUrl = url.split('-');
+            arrUrl[13] = val;
+            url = "/2sc";
+            for (var i = 0; i < arrUrl.length; i++) {
+                url += arrUrl[i] + "-";
+            }
+            location.href = url + "1.html";
+        }
+        //设置排序
+        function SetselectStore() {
+            var obj = document.getElementById("selectStore");
+            if (obj != null) {
+                var url = location.href;
+                url = url.substring(url.lastIndexOf('/'), url.lastIndexOf('-'));
+                var arrUrl = url.split('-');
+                if (arrUrl.length > 10) {
+                    obj.value = arrUrl[13];
+                }
+                else {
+                    obj.value = 0;
+                }
+            }
+        }
+        SetselectStore();
+    </script>
+</body>
+<script language="javascript" type="text/javascript">
+    var pvTrack = function () { };
+    pvTrack.site = 2;
+    pvTrack.category = 291;
+    pvTrack.subcategory = 1169;
+</script>
+<script language=javascript type=text/javascript>
+var url_stats="http://stats.autohome.com.cn/pv_count.php?SiteId=";
+(function (){
+    if (typeof(pvTrack)!=="undefined"){				
+		setTimeout("func_stats()",3000);		
+		var doc = document,t=pvTrack;
+		var pv_site,pv_category ,pv_subcategory,pv_object,pv_series,pv_type,pv_typeid,pv_spec,pv_level,pv_dealer,pv_ref,pv_cur;
+		pv_ref=escape(doc.referrer);pv_cur=escape(doc.URL);
+		pv_site=t.site;pv_category=t.category ;pv_subcategory= t.subcategory;pv_object=t.object;pv_series=t.series;pv_type=t.type;pv_typeid=t.typeid;pv_spec=t.spec;pv_level=t.level;pv_dealer=t.dealer;
+		url_stats+= pv_site+(pv_category != null ? "&CategoryId=" + pv_category : "")+ (pv_subcategory != null ? "&SubCategoryId=" + pv_subcategory : "")+ (pv_object != null ? "&objectid=" + pv_object : "")+ (pv_series != null ? "&seriesid=" + pv_series : "")+ (pv_type != null ? "&type=" + pv_type : "")+ (pv_typeid != null ? "&typeid=" + pv_typeid : "")+ (pv_spec != null ? "&specid=" + pv_spec : "")+ (pv_level != null ? "&jbid=" + pv_level : "")+ (pv_dealer != null ? "&dealerid=" + pv_dealer : "")+ "&ref=" + pv_ref + "&cur=" + pv_cur+"&rnd="+Math.random();
+		var len_url_stats =url_stats.length;
+		}
+})();
+document.write('<iframe id="PageView_stats" src="" style="display:none;"></iframe>');
+function func_stats(){document.getElementById('PageView_stats').src =url_stats;}
+</script>
+<script language="javascript" type="text/javascript" src="http://x.autoimg.cn/pv/js/ga-count.js"></script>
+</html>
+

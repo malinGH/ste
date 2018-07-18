@@ -1,0 +1,273 @@
+
+################################################################
+# Properties for autohome_4s_price
+# 05/07/2014
+# fanyuquan
+# autohome 4s price
+################################################################
+################################################################
+# Schema description
+#################################################################
+politeness:1
+proptype:autohome_4s_price
+schema:4s_url,brand,series,model,4s_price,4s_name,4s_area,province
+
+#################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://k.autohome.com.cn/suva01/
+######################################################################
+#step 0,get level_url
+#######################################################################
+process.0.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:level_info
+filter.parameters.begin:<div class="findcont-choose">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:level_info
+filter.parameters.to:url_info
+filter.parameters.begin:<a
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:url_info
+filter.parameters.to:level_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://k.autohome.com.cn" level_url
+filter.parameters.to:level_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:level_url
+filter.parameters.to:level_body
+
+############################
+# step 1, get series_url
+############################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:level_body
+filter.parameters.to:series_info
+filter.parameters.begin:<ul class="list-cont">
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:series_info
+filter.parameters.to:series_list
+filter.parameters.begin:<li>
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_list
+filter.parameters.to:series_url
+filter.parameters.begin:<a href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_url
+filter.parameters.to:url1
+filter.parameters.begin:/
+filter.parameters.end:/
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://k.autohome.com.cn" series_url
+filter.parameters.to:series_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:series_url
+filter.parameters.to:series_body
+
+#####################
+# get type
+######################
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_body
+filter.parameters.to:type_info
+filter.parameters.begin:year-title-border
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:type_info
+filter.parameters.to:type_url
+filter.parameters.begin:<a href='
+filter.parameters.end:'
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:type_url
+filter.parameters.to:type_url
+filter.parameters.end:#
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://k.autohome.com.cn" type_url
+filter.parameters.to:type_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:type_url
+filter.parameters.to:type_body
+
+############################################
+# step 2, get brand, series, model,model_url 
+############################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:type_body
+filter.parameters.to:head_info
+filter.parameters.begin:subnav-title-name
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:head_info
+filter.parameters.to:brand_info
+filter.parameters.begin:<a
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_info
+filter.parameters.to:brand
+filter.parameters.begin:">
+filter.parameters.end:-
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_info
+filter.parameters.to:series
+filter.parameters.begin:-
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series
+filter.parameters.to:series
+filter.parameters.begin:-
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:type_body
+filter.parameters.to:model_list
+filter.parameters.begin:emiss-cont-ul
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:model_list
+filter.parameters.to:model_info
+filter.parameters.begin:<div class="emiss-title">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.HrefExtractFilter
+filter.parameters.from:model_info
+filter.parameters.url:model_url
+filter.parameters.anchor:model
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_url
+filter.parameters.to:url2
+filter.parameters.begin:spec/
+filter.parameters.end:/
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://k.autohome.com.cn" model_url
+filter.parameters.to:model_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:model_url
+filter.parameters.to:model_body
+
+#########################
+# step 3, get 4s_url
+#########################
+process.3.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:url1 url2
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:0
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:100
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.interface.autohome.com.cn/dealer/specdealerlist/spec/pricelist/" url1 "-" url2 "-1-0-0-0-0-0-" num
+filter.parameters.to:4s_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:4s_url
+filter.parameters.to:4s_body
+
+########################
+# step 4, get 4s_price
+########################
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:4s_body
+filter.parameters.to:4s_info
+filter.parameters.css:.deal-list
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:4s_info
+filter.parameters.to:4s_list
+filter.parameters.begin:<li class
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:4s_list
+filter.parameters.to:4s_price_info
+filter.parameters.css:.price-link
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:4s_price_info
+filter.parameters.to:4s_price
+filter.parameters.begin:</i><span>
+filter.parameters.end:</span>
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:4s_list
+filter.parameters.to:province
+filter.parameters.css:.deal-list-city
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:province
+filter.parameters.to:province
+filter.parameters.begin:<div>
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:4s_list
+filter.parameters.to:area_info
+filter.parameters.css:.deal-list-infor
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:area_info
+filter.parameters.to:4s_area
+filter.parameters.begin:<span class="grey">地址：</span>
+filter.parameters.end:<a
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:4s_list
+filter.parameters.to:4s_phone
+filter.parameters.begin:dealer-api-phone">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:area_info
+filter.parameters.to:4s_name
+filter.parameters.begin:<span class="red">[4S店]
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:4s_name 4s_phone 4s_area 4s_price
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+
+result.parameters.maxNumPerFile:10000000

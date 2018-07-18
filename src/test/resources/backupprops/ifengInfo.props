@@ -1,0 +1,166 @@
+
+################################################################
+# Properties for test
+# 04/06/2014
+# fanyuquan
+# ifeng car info
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:info
+schema:series,title,title_url,picture,update_time,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://auto.ifeng.com/xinche/
+
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:body
+filter.parameters.to:list
+filter.parameters.css:.list
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:list
+filter.parameters.to:lists
+filter.parameters.begin:<div class="l_
+filter.parameters.end:文章</a></div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://auto.ifeng.com" title_url
+filter.parameters.to:title_url
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_url
+filter.parameters.to:_url
+filter.parameters.end:.shtml
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:title
+filter.parameters.begin:title="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:picture
+filter.parameters.begin:src="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:series
+filter.parameters.begin:l_cot_t_1
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series
+filter.parameters.to:series
+filter.parameters.begin:name">
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:title_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:title_body
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:maxPage
+filter.parameters.css:.subtitle
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:maxPage
+filter.parameters.to:maxPage
+filter.parameters.begin:<ul class="brn">
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:maxPage
+filter.parameters.to:maxPage
+filter.parameters.begin:>第
+filter.parameters.end:页
+
+filter.class:com.souche.ste.filter.MaxValueLimitFilter
+filter.parameters.attr:maxPage
+filter.parameters.maxValue:10
+
+#filter.class:com.souche.ste.filter.PrintFilter
+#filter.parameters.attrs:maxPage
+
+#################################################################
+# loop process builder
+#################################################################
+#process.3.class:com.souche.ste.process.builder.LoopProcessBuilder
+#process.parameters.attrs:maxPage _url
+
+#filter.class:com.souche.ste.filter.MathLoopFilter
+#filter.parameters.init:2
+#filter.parameters.inc:1
+#filter.parameters.to:num1
+#filter.parameters.maxValue:maxPage
+
+#filter.class:com.souche.ste.filter.BindStringFilter
+#filter.parameters.attrs:_url "_" num ".shtml"
+#filter.parameters.to:url1
+
+#filter.class:com.souche.ste.filter.UrlRequestFilter
+#filter.parameters.url:url1
+#filter.parameters.to:title_body
+
+
+###############
+# get content
+#############
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:update_time
+filter.parameters.begin:pubtime_baidu">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:update_time
+filter.parameters.to:update_time
+filter.parameters.end: 
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:content
+filter.parameters.css:.arl-c-txt
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content
+filter.parameters.to:content
+filter.parameters.begin:凤凰汽车讯
+filter.parameters.end:（图
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content
+filter.parameters.to:content
+filter.parameters.end:谍照及
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

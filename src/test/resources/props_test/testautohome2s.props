@@ -1,0 +1,272 @@
+
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+################################################################
+politeness:1
+interval:86400
+proptype:SecondCarPrice
+schema:area,brand,series,model,model_url,scar_price,mileage,update_time,license_time,seller_telephone,seller_name,remark,photo1,photo2
+
+################################################################
+# source configuration
+################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://car.autohome.com.cn/2sc/330199/index.html
+
+#################################################################
+# loop process builder
+#################################################################
+process.2.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num1
+filter.parameters.maxValue:200
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://car.autohome.com.cn/2sc/list-330199-" num1 "-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-1.html"
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:brand_body
+
+################################################################
+#step 1,get json list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:brand_json
+filter.parameters.begin:<ul id="ulTree"
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:brand_json
+filter.parameters.to:brand_info
+filter.parameters.begin:<a id=
+filter.parameters.end:</a>
+#filter.parameters.ignoreIdx:1
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_info
+filter.parameters.to:brand_url
+filter.parameters.begin:href='
+filter.parameters.end:'
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_info
+filter.parameters.to:brand
+filter.parameters.begin:>
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://car.autohome.com.cn" brand_url
+filter.parameters.to:brand_url
+
+filter.class:com.souche.ste.filter.PrintFilter
+filter.parameters.attrs:brand_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:brand_url
+filter.parameters.to:brand_body
+
+#################################################################
+# loop process builder
+#################################################################
+process.2.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:0
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:200
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://car.autohome.com.cn/2sc/list-330199-" num1 "-0-0-0_0-0-0-0-0-0-0-0-0-0-0-0-" num2 ".html"
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:brand_body
+
+###################################################################
+# step 2, get series lists
+###################################################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:brand_body
+filter.parameters.to:boxlist
+filter.parameters.begin:class='listtree'
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:boxlist
+filter.parameters.to:series_info
+filter.parameters.begin:id=
+filter.parameters.end:</dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_info
+filter.parameters.to:series_url
+filter.parameters.begin:href='
+filter.parameters.end:'
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:series_info
+filter.parameters.to:series
+filter.parameters.begin:>
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://car.autohome.com.cn" series_url
+filter.parameters.to:series_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:series_url
+filter.parameters.to:series_body
+
+###################################################################
+# step 3, get model lists
+###################################################################
+
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:series_body
+filter.parameters.to:model_info
+filter.parameters.begin:<ul class="listul"
+filter.parameters.end:</li></ul>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_info
+filter.parameters.to:model_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_info
+filter.parameters.to:model
+filter.parameters.begin:class="font14">
+filter.parameters.end:</a></p>
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:model_url
+filter.parameters.to:model_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:model_url
+filter.parameters.to:model_body
+
+##########################################################################
+#step 4,get scar_price, mileage ,license_time,seller_telephone,seller_name
+##########################################################################
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_body
+filter.parameters.to:box
+filter.parameters.begin:<dl class="info_dl">
+filter.parameters.end:<span class="fontb12">
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:scar_price
+filter.parameters.begin:<span class="price">
+filter.parameters.end:<span
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:scar_price
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:mileage
+filter.parameters.begin:<span class="fl">行驶里程：</span>
+filter.parameters.end:</span><span>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:area
+filter.parameters.begin:"fl">交易地区：</span>
+filter.parameters.end:</dd><dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:update_time
+filter.parameters.begin:"flgrey">更新：</span>
+filter.parameters.end:</span></dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:license_time
+filter.parameters.begin:<span class="fl">首次上牌：</span>
+filter.parameters.end:</span><span>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:seller_telephone
+filter.parameters.begin:<span class="telphone2">
+filter.parameters.end:</span>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:box
+filter.parameters.to:seller_name
+filter.parameters.begin:</span> (
+filter.parameters.end:)</div
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.brand:n/a
+
+#############################
+#get remark,photo1
+#############################
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_body
+filter.parameters.to:re_list
+filter.parameters.begin:divContentTab
+filter.parameters.end: class="bds_more"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:re_list
+filter.parameters.to:remark
+filter.parameters.begin:class='servfont'>
+filter.parameters.end:</p></div>
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:remark
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:re_list
+filter.parameters.url:photo1
+
+#############################
+#get photo2
+#############################
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:model_body
+filter.parameters.to:photo_list
+filter.parameters.begin:car_focus">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:photo_list
+filter.parameters.url:photo2
+
+
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

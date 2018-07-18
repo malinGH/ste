@@ -1,0 +1,172 @@
+
+################################################################
+# Properties for taoche business phone
+# 04/29/2014
+# hongwm
+# taoche ershouche business
+################################################################
+################################################################
+# Schema description
+#########################################################
+politeness:1
+proptype:business
+schema:url,city,seller_name,seller_phone
+
+##########################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://quanguo.taoche.com/buycar/pges2bxcdza/?orderid=5&direction=2&pic=1
+
+#################################################################
+# loop process builder
+#################################################################
+process.1.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:100
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://quanguo.taoche.com/buycar/pges2bxcdza/?orderid=5&direction=2&pic=1" "&page=" num
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:body
+
+filter.class:com.souche.ste.filter.SleepFilter
+filter.parameters.sleep:2000
+
+################################################################
+#step 2,get info list
+################################################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:items
+filter.parameters.begin:<ul class="wgxqcar pic_242237  box15_15 mainpicboxb">
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:item
+filter.parameters.begin:<li
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:item_info
+filter.parameters.begin:<a class="logo"
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item_info
+filter.parameters.to:url
+filter.parameters.begin:='
+filter.parameters.end:'
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:detail_body
+
+################################################################
+#step 3,get seller_name
+################################################################
+process.3.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:seller_info
+filter.parameters.begin:cyjs_photo
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:seller_info
+filter.parameters.to:seller_name
+filter.parameters.begin:<li> 
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:seller_name
+filter.parameters.to:seller_name
+filter.parameters.end:                                   
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:color_info
+filter.parameters.begin:figbox car_config xxian clearfix
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:color_info
+filter.parameters.to:provinces
+filter.parameters.begin:车辆地点：</span>
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:provinces
+filter.parameters.to:city
+filter.parameters.begin: 
+
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:seller_name
+
+###########################################################################
+#step 5,get phone_url
+###########################################################################
+process.5.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:url
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:url
+filter.parameters.to:phone_url
+filter.parameters.begin:com/
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://m.taoche.com/" phone_url
+filter.parameters.to:phone_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:phone_url
+filter.parameters.to:phone_body
+
+########################
+#step 6, get phone
+#####################
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:phone_body
+filter.parameters.to:seller_phone
+filter.parameters.begin:<div id="divBottomTel"
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:seller_phone
+filter.parameters.to:seller_phone
+filter.parameters.begin:none">
+filter.parameters.end:(
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:seller_phone
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.brand:n/a
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+result.parameters.maxNumPerFile:10000000

@@ -1,0 +1,25 @@
+<div id="parameter_div" class="SearchBox">
+			<li>按地区：<a class="gray12s6" href="/car/essence/l100000jyckbmg">全部</a>
+			<a class="gray12s6" href="/car/essence/l330100jyckbmg">杭州</a>
+			<a class="gray12s6" href="/car/essence/l330200jyckbmg">宁波</a>
+			<a class="gray12s6" href="/car/essence/l330300jyckbmg">温州</a>
+			<a class="gray12s6" href="/car/essence/l330400jyckbmg">嘉兴</a>
+			<a class="gray12s6" href="/car/essence/l330500jyckbmg">湖州</a>
+			<a class="gray12s6" href="/car/essence/l330600jyckbmg">绍兴</a>
+			<a class="gray12s6" href="/car/essence/l330700jyckbmg">金华</a>
+			<a class="gray12s6" href="/car/essence/l330800jyckbmg">衢州</a>
+			<a class="gray12s6" href="/car/essence/l330900jyckbmg">舟山</a>
+			<a class="gray12s6" href="/car/essence/l331000jyckbmg">台州</a>
+			<a class="gray12s6" href="/car/essence/l331100jyckbmg">丽水</a>
+			<a class="gray12s6 Sbtn1 white12" href="/car/essence/l110100jyckbmg">北京</a>
+			<a class="gray12s6" href="/car/essence/l330000jyckbmg">浙江</a>
+			<a class="gray12s6" href="/car/essence/l320000jyckbmg">江苏</a>
+			<a class="gray12s6" href="/car/essence/l340000jyckbmg">安徽</a>
+			<a class="gray12s6" href="/car/essence/l440000jyckbmg">广东</a>
+			<a class="gray12s6" href="/car/essence/l310100jyckbmg">上海</a>
+			<a class="gray12s6" href="/car/essence/l440300jyckbmg">深圳</a>
+			<a class="gray12s6" href="/car/essence/l210100jyckbmg">沈阳</a>
+			<a class="gray12s6" href="/car/essence/l320500jyckbmg">苏州</a>
+			</li>
+		</ul>
+	</div>

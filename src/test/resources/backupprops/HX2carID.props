@@ -1,0 +1,128 @@
+
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+#interval:86400
+proptype:HX2CarID
+schema:model_url, person_url,seller_name
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.hx2car.com/car/verify/l110100jyckbmg
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:body
+filter.parameters.to:type_list
+filter.parameters.css:#SeaCartags
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:type_list
+filter.parameters.to:type_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.hx2car.com" type_url
+filter.parameters.to:type_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:type_url
+filter.parameters.to:car_body
+
+#################################################################
+# loop process builder
+#################################################################
+process.2.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:250
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:type_url "&currPage=" num
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:car_body
+
+################################################################
+#step 3,get info list
+################################################################
+process.3.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:car_body
+filter.parameters.to:items
+filter.parameters.css:.SeaBox
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:item
+filter.parameters.begin:style="
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:model_url
+filter.parameters.begin:<a href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.hx2car.com" model_url
+filter.parameters.to:model_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:model_url
+filter.parameters.to:info_body
+
+####################################
+#step 4,get seller_name,person_url
+###################################
+
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info_body
+filter.parameters.to:person_info
+filter.parameters.begin:CarRight
+filter.parameters.end:</a></em></dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:person_info
+filter.parameters.to:seller_name
+filter.parameters.begin:gray12">
+filter.parameters.end:</em>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:person_info
+filter.parameters.to:person_url
+filter.parameters.begin: href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.hx2car.com" person_url
+filter.parameters.to:person_url
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

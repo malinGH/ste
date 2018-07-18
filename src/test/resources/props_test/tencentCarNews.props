@@ -1,0 +1,134 @@
+
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:tencentCarNews
+schema:title,title_url,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://auto.qq.com/news/index.htm
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:type_list
+filter.parameters.begin:id="autonav_xinwen"
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:type_list
+filter.parameters.to:type_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:type_url
+filter.parameters.to:type_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:type_url
+filter.parameters.to:news_body
+
+#################################################################
+# loop process builder
+#################################################################
+process.2.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:80
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:type_url
+filter.parameters.to:url_head
+filter.parameters.end:.htm
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:url_head "_" num ".htm"
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:item_body
+
+#####################################################################
+#step 3,get type list
+################################################################
+process3.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:news_body
+filter.parameters.to:items
+filter.parameters.begin:class="mod titbox">
+filter.parameters.end:/ul></div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:item
+filter.parameters.begin:<a target=
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:item
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:title
+filter.parameters.begin:>
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:title_url
+filter.parameters.to:title_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:item_body
+
+
+###########################################################
+#get context list
+##########################################################
+
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:item_body
+filter.parameters.to:con
+filter.parameters.begin:id="Cnt-Main-Article-QQ"
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:con
+filter.parameters.to:content
+filter.parameters.begin:">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

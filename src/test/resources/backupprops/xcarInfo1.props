@@ -1,0 +1,91 @@
+
+################################################################
+# Properties for test
+# 04/06/2014
+# fanyuquan
+# xcar car info
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:info
+schema:title,title_url,picture,update_time,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://info.xcar.com.cn/list/234/
+
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.CssParserMultiFilter
+filter.parameters.from:body
+filter.parameters.to:item
+filter.parameters.css:.newlist_lefts
+
+#filter.class:com.souche.ste.filter.PrintFilter
+#filter.parameters.attrs:item
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:update_time
+filter.parameters.begin:newlist_ftime"></span>
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:title
+filter.parameters.begin:blank">
+filter.parameters.end:</a>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:title_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:title_body
+
+###############
+# get content
+#############
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:content
+filter.parameters.css:.artical_player_wrap
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:content
+filter.parameters.url:picture
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content
+filter.parameters.to:content
+filter.parameters.begin:原创]&nbsp;
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content
+filter.parameters.to:content
+filter.parameters.begin:原创]
+filter.parameters.end:编辑点评：
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder

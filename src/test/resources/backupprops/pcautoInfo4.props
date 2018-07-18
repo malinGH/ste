@@ -1,0 +1,85 @@
+
+################################################################
+# Properties for test
+# 04/06/2014
+# fanyuquan
+# ifeng car info
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:info
+schema:title,title_url,picture,update_time,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.pcauto.com.cn/nation/ycxc/
+
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:list
+filter.parameters.begin:<ul class="list" id="JList">
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:list
+filter.parameters.to:lists
+filter.parameters.begin:class="tit">
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:title
+filter.parameters.begin:blank">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:lists
+filter.parameters.to:update_time
+filter.parameters.begin:"time">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:title_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:title_body
+
+##############
+# get content
+##############
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:content
+filter.parameters.begin:【太平洋汽车网 新车频道】
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:content
+filter.parameters.url:picture
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

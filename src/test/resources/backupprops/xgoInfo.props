@@ -1,0 +1,109 @@
+
+################################################################
+# Properties for test
+# 04/06/2014
+# fanyuquan
+# xgo car info
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:info
+schema:series,title,title_url,picture,update_time,content
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://news.xgo.com.cn/more/2_2.html
+
+#####################################################################
+#step 1,get type list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:item
+filter.parameters.begin:<div class="wrap_l mt">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:item
+filter.parameters.to:items
+filter.parameters.begin:<li>
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:items
+filter.parameters.to:update_time
+filter.parameters.begin:<span>
+filter.parameters.end:</span>
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"2014年" update_time
+filter.parameters.to:update_time
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:items
+filter.parameters.to:title
+filter.parameters.begin:">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:items
+filter.parameters.to:series
+filter.parameters.begin:#5F5F5F">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:items
+filter.parameters.to:title_url
+filter.parameters.begin:href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:title_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:title_url
+filter.parameters.to:title_body
+
+###############
+# get content
+#############
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title_body
+filter.parameters.to:_content
+filter.parameters.begin:f16 mt-12
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:_content
+filter.parameters.url:picture
+
+#filter.class:com.souche.ste.filter.PrintFilter
+#filter.parameters.attrs:_content
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:_content
+filter.parameters.to:content
+filter.parameters.begin:">
+filter.parameters.end:延伸阅读
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:content
+filter.parameters.to:content
+filter.parameters.begin:编辑点评：
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:content
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

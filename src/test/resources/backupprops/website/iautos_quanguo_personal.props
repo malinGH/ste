@@ -1,0 +1,264 @@
+
+################################################################
+# Properties for 58 personal
+# 04/29/2014
+# hongwm
+# iautos ershouche personal
+################################################################
+################################################################
+# Schema description
+###############################################################################################
+politeness:2
+proptype:personal
+schema:url,city,brand,series,title,update_time,price,mileage,license_time,seller_name,seller_phone,color,emission_standard,remark,photo
+
+################################################################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://so.iautos.cn/quanguo/pas2ds9vepcatcpbnscac/
+
+#################################################################
+# loop process builder
+#################################################################
+process.1.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:3
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://so.iautos.cn/quanguo/p" num "as2ds9vepcatcpbnscac/"
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:body
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:url
+
+filter.class:com.souche.ste.filter.SleepFilter
+filter.parameters.sleep:2000
+
+################################################################
+#step 1,get info list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:items
+filter.parameters.begin:<div class="carShow">
+filter.parameters.end:<div class="page">
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:item
+filter.parameters.begin:<li>
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:url
+filter.parameters.begin:<a href="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:title
+filter.parameters.begin:</font>
+filter.parameters.end:</a></h4>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title
+filter.parameters.to:title
+filter.parameters.begin:title="
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title
+filter.parameters.to:title
+filter.parameters.end:[
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:title
+filter.parameters.to:title
+filter.parameters.end:(
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:detail_body
+
+#############################
+#step 2, get personal_info
+#############################
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:head_info
+filter.parameters.css:.glb-breadcrumb
+
+filter.class:com.souche.ste.filter.HrefExtractFilter
+filter.parameters.from:head_info
+filter.parameters.url:tmp
+filter.parameters.anchor:city
+filter.parameters.id:1
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:city
+filter.parameters.to:city
+filter.parameters.end:二手车
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:info_emission
+filter.parameters.css:.cd-icon5-1
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info_emission
+filter.parameters.to:emission_standard
+filter.parameters.begin:">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:info
+filter.parameters.css:.summary-txt
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info
+filter.parameters.to:price
+filter.parameters.begin:<span class="price">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info
+filter.parameters.to:license_time
+filter.parameters.begin:首次上牌</dt>
+filter.parameters.end:</dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info
+filter.parameters.to:mileage
+filter.parameters.begin:<dt>关键参数</dt>
+filter.parameters.end:</dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:mileage
+filter.parameters.to:mileage
+filter.parameters.begin:<dd>
+filter.parameters.end:，
+
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:license_time
+filter.parameters.to:license_time
+filter.parameters.begin:<dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info
+filter.parameters.to:seller_name
+filter.parameters.begin:<div class="seller-name">
+filter.parameters.end:</span>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:seller_name
+filter.parameters.to:seller_name
+filter.parameters.begin:<span>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:info
+filter.parameters.to:seller
+filter.parameters.begin:class="cd-call clearfix phone-show">
+filter.parameters.end:<div class="seller-name">
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:seller
+filter.parameters.to:seller_phone
+filter.parameters.begin:<p class="call-num">
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:seller_phone
+filter.parameters.to:seller_phone
+filter.parameters.begin:<p class="call-num">
+filter.parameters.end:</p>
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:remark_info
+filter.parameters.css:.postscript
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:remark_info
+filter.parameters.to:remark
+filter.parameters.begin:<p>
+filter.parameters.end:</p>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:_info
+filter.parameters.begin:box clearfix
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:_info
+filter.parameters.to:brand
+filter.parameters.begin:生产厂家</span>
+filter.parameters.end:</li>
+
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:_info
+filter.parameters.to:series
+filter.parameters.begin:品牌车系</span>
+filter.parameters.end:</a></li>
+
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:_info
+filter.parameters.to:color
+filter.parameters.begin:车身颜色</span>
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:color
+filter.parameters.to:color
+filter.parameters.end:，
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:color series brand remark emission_standard
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:updat_info
+filter.parameters.begin:<h2 class="title clearfix">
+filter.parameters.end:</h2>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:updat_info
+filter.parameters.to:update_time
+filter.parameters.begin:<span class="gray">
+filter.parameters.end:更新
+
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:photo_info
+filter.parameters.css:.cd-img
+
+filter.class:com.souche.ste.filter.ImgExtractFilter
+filter.parameters.from:photo_info
+filter.parameters.url:photo
+filter.parameters.tag:data-original
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:emission_standard remark photo
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+result.parameters.maxNumPerFile:10
+

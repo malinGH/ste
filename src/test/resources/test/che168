@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="x-ua-compatible" content="ie=emulateie7" />
+    <title>
+        宁波市鄞州质上尊二手车经纪有限公司_浙江二手车_二手车之家</title>
+    <link href="/css/del_style.css?" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--迷你导航开始-->
+    <style type="text/css">body{font-family:\5B8B\4F53,Arial Narrow,arial,serif;background:#ffffff;font-size:12px;}body,div,dl,dt,dd,ul,ol,li,p,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote{padding:0;margin:0;}input,select,textarea,button{vertical-align:middle;}table,td,tr,th{font-size:12px;}li{list-style-type:none;}img{vertical-align:top;border:0;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;}address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}.clear{clear:both;height:0;line-height:0;font-size:0px;overflow:hidden;}a:link,a:visited{color:#01439A;text-decoration:none;}a:hover{color:#D60000;text-decoration:none;}.fontblack{color:#000000;}.fontred{color:#ff0000;}.del_mini,.frnav li a.register{background:url(http://www.autoimg.cn/che168_2sc/images/flatcenter_dealer/mini_bg.png) repeat-x;}.del_mini{width:960px;height:28px;line-height:28px;margin:0 auto;}.del_logo{float:left;padding-left:8px;}.frnav{float:right;color:#d8d8d8;padding-right:10px;}.frnav li{float:left;}.frnav li a{padding:0 5px;display:inline-block;}.frnav li a.register{width:35px;height:17px;display:inline-block;overflow:hidden;margin:5px 5px 0 0;padding:0;background-position:0 -30px;}</style>
+<!--迷你导航开始-->
+<div class="del_mini">
+  <div class="del_logo">
+    <a href="/" target="_blank">
+      <img src="http://www.autoimg.cn/che168_2sc/images/logo/del_logo.png" width="175" height="28" alt="二手车之家商家平台logo" />
+    </a>
+  </div>
+  <ul class="frnav" id ="head_nav">
+  </ul>
+</div>
+  <script type="text/javascript" src="/js/dealer/Dealer_Header.js?20140409"></script>
+<!--迷你导航结束-->
+    <!--迷你导航结束-->
+    <!--头部开始-->
+    
+<div class="header">
+<div class="del_banner"><h2>宁波市鄞州质上尊二手车经纪有限公司</h2></div>
+    <div class="del_nav">
+        <ul>
+        <li id="li_index" onmouseover="MouseMoves(this)" onmouseout="MouseMoves(this)"><a href="/dealer/129896.html">首页</a></li>
+        <li id="li_CarList" onmouseover="MouseMoves(this)" onmouseout="MouseMoves(this)"><a href="/dealer/carlist/129896.html#pvareaid=100471">车型信息</a></li>
+        <li id="li_Promotions" onmouseover="MouseMoves(this)" onmouseout="MouseMoves(this)"><a href="/dealer/salemessage/129896/list-1.html#pvareaid=100473">促销信息</a></li>
+        <li id="li_Questions" onmouseover="MouseMoves(this)" onmouseout="MouseMoves(this)"><a href="/dealer/Questions/129896-1.html#pvareaid=100474">购车问答</a></li>            
+        <li id="li_Info" onmouseover="MouseMoves(this)" onmouseout="MouseMoves(this)"><a href="/dealer/info/129896.html#pvareaid=100472">公司介绍</a></li>
+        <li id="li_manage" onmouseover="MouseMoves(this)" onmouseout="MouseMoves(this)"><a href="http://dealer.che168.com/index.html">平台管理</a></li>
+        </ul>
+        <p id="p_manage" class="fontdred">如有疑问，可拨打：010-59857692</p>
+    </div>
+</div>
+<script type="text/javascript">
+    var Dealerid = null;
+    if (document.cookie != null && document.cookie!=undefined) {
+        var nameEQ = "2scDealerId=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) {
+                Dealerid = decodeURIComponent(c.substring(nameEQ.length, c.length));
+            }
+        }
+    }
+    if ('129896' != Dealerid) {
+        document.getElementById('li_manage').style.display = 'none';
+        document.getElementById('p_manage').style.display = 'none';
+    }
+</script>
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="content">
+        <div class="con_left">
+            
+            <!--店内搜索开始-->
+            
+<div class="subsearch col"><h3>店内搜索</h3>
+<div class="search_st">
+<select id="select_jb" class="ss_input">
+<option value="0" >选择级别</option>
+<option value="1" >微型车</option>
+<option value="2" >小型车</option>
+<option value="3" >紧凑型车</option>
+<option value="4" >中型车</option>
+<option value="5" >中大型车</option>
+<option value="6" >豪华车</option>
+<option value="8" >MPV</option>
+
+<option value="16" >小型SUV</option>
+<option value="17" >紧凑型SUV</option>
+<option value="18" >中型SUV</option>
+<option value="19" >中大型SUV</option>
+<option value="20" >全尺寸SUV</option>
+<option value="7" >跑车</option>
+</select><br />
+<select id="select_pid" class="ss_input">
+<option value="0" >选择价格区间</option>
+<option value="1"  >3万以下</option>
+<option value="2" >3-5万</option>
+<option value="3" >5-8万</option>
+<option value="4" >8-10万</option>
+<option value="5" >10-15万</option>
+<option value="6" >15-20万</option>
+<option value="7" >20-30万</option>
+<option value="8" >30-50万</option>
+<option value="9" >50-100万</option>
+<option value="10" >100万以上</option>
+</select><br />
+<select id="select_ageid" class="ss_input">
+<option value="0" >选择使用年限</option>
+<option value="1"  >1年以内</option>
+<option value="2"  >1-3年</option>
+<option value="3"  >3-5年</option>
+<option value="4"  >5-8年</option>
+<option value="5"  >8-10年</option>
+<option value="6"  >10年以上</option>
+</select><br />
+<select id="select_mid" class="ss_input">
+<option value="0" >选择里程</option>
+<option value="1"  >1万公里以内</option>
+<option value="2" >1-3万公里</option>
+<option value="3" >3-6万公里</option>
+<option value="4" >6-10万公里</option>
+<option value="5" >10万公里以上</option>
+</select><br />
+<input type="button" class="ss_btn" value="确定" onclick="btn_search('129896')" /></div></div>
+
+
+            <!--店内搜索结束-->
+            
+        <div class="guide col">
+            <h3>
+                销售代表</h3>
+            <ul class="pe_list">
+    
+        <li>
+            <img src="http://www.autoimg.cn/2scimg/2sc_head1/2014/4/12/y_5716153584639083548.jpg" width="77" height="89" alt=" 耿宏宝" />
+            <span class="fontw">耿宏宝</span>            
+            <span class="icon_ph">
+                
+                
+                13685899420
+            </span> 
+            <span class="icon_qq">1210012050</span>
+        </li>
+    
+        <li>
+            <img src="http://www.autoimg.cn/2scimg/2sc_head1/2014/3/27/y_4807613682961464994.jpg" width="77" height="89" alt=" 张静" />
+            <span class="fontw">张静</span>            
+            <span class="icon_ph">
+                
+                
+                18658489898
+            </span> 
+            <span class="icon_qq">812658643</span>
+        </li>
+    
+        <li>
+            <img src="http://www.autoimg.cn/2scimg/2sc_head1/2013/11/30/y_1337_63e5d083_63e5d083.jpg" width="77" height="89" alt=" 张先生" />
+            <span class="fontw">张先生</span>            
+            <span class="icon_ph">
+                
+                
+                18667852818
+            </span> 
+            <span class="icon_qq">254490801</span>
+        </li>
+    
+        </ul> </div>
+    
+
+            
+        <div class="assess col">
+            <h3>
+                评估师</h3>
+            <ul class="pe_list">
+    
+        <li>
+            <img src="http://www.autoimg.cn/2scimg/2sc_head2/2014/4/12/y_4640628899176416897.jpg" width="77" height="89" alt="耿宏宝" />
+            <span class="fontw">
+                耿宏宝</span> <span class="icon_ph">
+                    13685899420</span> <span class="icon_qq">
+                        1210012050</span> </li>
+    
+        <li>
+            <img src="http://www.autoimg.cn/2scimg/2sc_head2/2013/12/1/y_4176_ed257f20_ed257f20.jpg" width="77" height="89" alt="张静" />
+            <span class="fontw">
+                张静</span> <span class="icon_ph">
+                    18658489898</span> <span class="icon_qq">
+                        812658643</span> </li>
+    
+        <li>
+            <img src="http://www.autoimg.cn/2scimg/2sc_head2/2013/12/3/y_c0e2_dea28783_dea28783.jpg" width="77" height="89" alt="张文斌" />
+            <span class="fontw">
+                张文斌</span> <span class="icon_ph">
+                    18667852818</span> <span class="icon_qq">
+                        254490801</span> </li>
+    
+        </ul> </div>
+    
+
+        </div>
+        <div class="con_right">
+            <div class="delshow col">
+                
+
+<dl>
+<dt><img src="http://www.autoimg.cn/2scimg/dealer/2014/1/16/y_7a5e_c13b03e4_c13b03e4.jpg" width="280" height="210" alt="" /></dt>
+<dd class="fontb14">宁波市鄞州质上尊二手车经纪有限公司</dd>
+<dd>经营性质：销售公司</dd>
+<dd>提供服务：车辆置换,价格评估,代办过户,代办验车,<a href="/dealer/info/129896.html">更多</a></dd>
+<dd>省　　市：浙江 宁波</dd>
+<dd>地　　址：鄞州区中河街道嵩江东路368号<span id="DealerInfo1_spanMap" class="STYLE1">(<a style="text-decoration:underline" href="/dealer/info/129896.html#map">查看地图</a>)</span></dd>
+<dd>联系电话：4008123727</dd>
+<dd>手　　机：18658489898</dd></dl>
+
+            </div>
+            <div class="newcar col">
+                
+<h3><a href="/dealer/carlist/129896.html" id="CarList1_A_More" class="more1">更多&gt;&gt;</a>最新二手车</h3>
+<ul>
+ 
+            	<li>
+                	<a href="/dealer/129896/2617836.html#pvareaid=100476" title="悦动 2011款 1.6L 手动舒适型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/5/9/s_4975696528134945039.jpg" width="120" height="90"alt="悦动 2011款 1.6L 手动舒适型" /></a>
+                    <span class="fontbred">￥6.98万</span>
+                    <span><a title="悦动 2011款 1.6L 手动舒适型" href="/dealer/129896/2617836.html#pvareaid=100476" target="_blank">悦动 2011款 1.6L 手动</a></span>
+                    <span>3.60万公里  2011年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2617800.html#pvareaid=100476" title="福克斯 2007款 两厢 1.8L MT舒适型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/5/9/s_4833234171119756124.jpg" width="120" height="90"alt="福克斯 2007款 两厢 1.8L MT舒适型" /></a>
+                    <span class="fontbred">￥5.60万</span>
+                    <span><a title="福克斯 2007款 两厢 1.8L MT舒适型" href="/dealer/129896/2617800.html#pvareaid=100476" target="_blank">福克斯 2007款 两厢 1.</a></span>
+                    <span>5.90万公里  2008年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2463735.html#pvareaid=100476" title="锋范 2008款 1.5L 自动精英版" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/4/12/s_4939801772259077911.jpg" width="120" height="90"alt="锋范 2008款 1.5L 自动精英版" /></a>
+                    <span class="fontbred">￥6.00万</span>
+                    <span><a title="锋范 2008款 1.5L 自动精英版" href="/dealer/129896/2463735.html#pvareaid=100476" target="_blank">锋范 2008款 1.5L 自动</a></span>
+                    <span>9.00万公里  2009年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2367734.html#pvareaid=100476" title="狮跑 2009款 2.0L 手动两驱版GL" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/29/s_5363288781939279224.jpg" width="120" height="90"alt="狮跑 2009款 2.0L 手动两驱版GL" /></a>
+                    <span class="fontbred">￥8.98万</span>
+                    <span><a title="狮跑 2009款 2.0L 手动两驱版GL" href="/dealer/129896/2367734.html#pvareaid=100476" target="_blank">狮跑 2009款 2.0L 手动</a></span>
+                    <span>4.50万公里  2009年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2349961.html#pvareaid=100476" title="奥迪TT 2011款 TT Roadster 2.0TFSI" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_5522031009368373743.jpg" width="120" height="90"alt="奥迪TT 2011款 TT Roadster 2.0TFSI" /></a>
+                    <span class="fontbred">￥43.80万</span>
+                    <span><a title="奥迪TT 2011款 TT Roadster 2.0TFSI" href="/dealer/129896/2349961.html#pvareaid=100476" target="_blank">奥迪TT 2011款 TT Road</a></span>
+                    <span>0.16万公里  2012年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2348639.html#pvareaid=100476" title="帝豪EC7 2010款 三厢 1.8L 手动尊贵型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_5464602163682113907.jpg" width="120" height="90"alt="帝豪EC7 2010款 三厢 1.8L 手动尊贵型" /></a>
+                    <span class="fontbred">￥6.80万</span>
+                    <span><a title="帝豪EC7 2010款 三厢 1.8L 手动尊贵型" href="/dealer/129896/2348639.html#pvareaid=100476" target="_blank">帝豪EC7 2010款 三厢 1</a></span>
+                    <span>4.90万公里  2011年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2348475.html#pvareaid=100476" title="尚酷 2011款 2.0TSI 豪华版" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_5038088714193482933.jpg" width="120" height="90"alt="尚酷 2011款 2.0TSI 豪华版" /></a>
+                    <span class="fontbred">￥26.38万</span>
+                    <span><a title="尚酷 2011款 2.0TSI 豪华版" href="/dealer/129896/2348475.html#pvareaid=100476" target="_blank">尚酷 2011款 2.0TSI 豪</a></span>
+                    <span>1.00万公里  2013年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2348436.html#pvareaid=100476" title="雅阁 2010款 2.4L LX" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_5410379861010023553.jpg" width="120" height="90"alt="雅阁 2010款 2.4L LX" /></a>
+                    <span class="fontbred">￥15.80万</span>
+                    <span><a title="雅阁 2010款 2.4L LX" href="/dealer/129896/2348436.html#pvareaid=100476" target="_blank">雅阁 2010款 2.4L LX</a></span>
+                    <span>3.00万公里  2010年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2348382.html#pvareaid=100476" title="甲壳虫 2004款 1.8T AT" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_4638762475011904669.jpg" width="120" height="90"alt="甲壳虫 2004款 1.8T AT" /></a>
+                    <span class="fontbred">￥8.98万</span>
+                    <span><a title="甲壳虫 2004款 1.8T AT" href="/dealer/129896/2348382.html#pvareaid=100476" target="_blank">甲壳虫 2004款 1.8T AT</a></span>
+                    <span>8.00万公里  2006年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2348357.html#pvareaid=100476" title="迈腾 2009款 1.8TSI DSG豪华型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_5382450349889052351.jpg" width="120" height="90"alt="迈腾 2009款 1.8TSI DSG豪华型" /></a>
+                    <span class="fontbred">￥15.80万</span>
+                    <span><a title="迈腾 2009款 1.8TSI DSG豪华型" href="/dealer/129896/2348357.html#pvareaid=100476" target="_blank">迈腾 2009款 1.8TSI DS</a></span>
+                    <span>5.00万公里  2009年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2347769.html#pvareaid=100476" title="马自达6 2013款 2.0L 自动超豪华型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/26/s_5456602917284635414.jpg" width="120" height="90"alt="马自达6 2013款 2.0L 自动超豪华型" /></a>
+                    <span class="fontbred">￥13.98万</span>
+                    <span><a title="马自达6 2013款 2.0L 自动超豪华型" href="/dealer/129896/2347769.html#pvareaid=100476" target="_blank">马自达6 2013款 2.0L 自</a></span>
+                    <span>1.30万公里  2013年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2215029.html#pvareaid=100476" title="科鲁兹 2010款 1.6L SL天地版 MT" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/6/s_5096772295722086334.jpg" width="120" height="90"alt="科鲁兹 2010款 1.6L SL天地版 MT" /></a>
+                    <span class="fontbred">￥8.20万</span>
+                    <span><a title="科鲁兹 2010款 1.6L SL天地版 MT" href="/dealer/129896/2215029.html#pvareaid=100476" target="_blank">科鲁兹 2010款 1.6L SL</a></span>
+                    <span>5.80万公里  2010年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2209975.html#pvareaid=100476" title="比亚迪F0 2012款 1.0L 悦酷型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/5/s_5443892039635812222.jpg" width="120" height="90"alt="比亚迪F0 2012款 1.0L 悦酷型" /></a>
+                    <span class="fontbred">￥2.70万</span>
+                    <span><a title="比亚迪F0 2012款 1.0L 悦酷型" href="/dealer/129896/2209975.html#pvareaid=100476" target="_blank">比亚迪F0 2012款 1.0L </a></span>
+                    <span>1.40万公里  2012年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2209138.html#pvareaid=100476" title="奥迪TT 2008款 TT 3.2 Quattro" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/5/s_5399604691538703542.jpg" width="120" height="90"alt="奥迪TT 2008款 TT 3.2 Quattro" /></a>
+                    <span class="fontbred">￥27.50万</span>
+                    <span><a title="奥迪TT 2008款 TT 3.2 Quattro" href="/dealer/129896/2209138.html#pvareaid=100476" target="_blank">奥迪TT 2008款 TT 3.2 </a></span>
+                    <span>9.00万公里  2009年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2208977.html#pvareaid=100476" title="宝马3系 2005款 325i 时尚型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/5/s_4754858201814915350.jpg" width="120" height="90"alt="宝马3系 2005款 325i 时尚型" /></a>
+                    <span class="fontbred">￥15.50万</span>
+                    <span><a title="宝马3系 2005款 325i 时尚型" href="/dealer/129896/2208977.html#pvareaid=100476" target="_blank">宝马3系 2005款 325i 时</a></span>
+                    <span>6.00万公里  2006年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2208932.html#pvareaid=100476" title="宝马3系(进口) 2010款 325i豪华型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/5/s_5473975363941564954.jpg" width="120" height="90"alt="宝马3系(进口) 2010款 325i豪华型" /></a>
+                    <span class="fontbred">￥25.20万</span>
+                    <span><a title="宝马3系(进口) 2010款 325i豪华型" href="/dealer/129896/2208932.html#pvareaid=100476" target="_blank">宝马3系(进口) 2010款 </a></span>
+                    <span>4.10万公里  2011年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2184116.html#pvareaid=100476" title="奥德赛 2006款 2.4L 豪华型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/3/1/s_5519974833284352005.jpg" width="120" height="90"alt="奥德赛 2006款 2.4L 豪华型" /></a>
+                    <span class="fontbred">￥8.80万</span>
+                    <span><a title="奥德赛 2006款 2.4L 豪华型" href="/dealer/129896/2184116.html#pvareaid=100476" target="_blank">奥德赛 2006款 2.4L 豪</a></span>
+                    <span>12.00万公里  2005年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2177887.html#pvareaid=100476" title="奥德赛 2005款 2.4L 舒适型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/2/28/s_4784601371702373787.jpg" width="120" height="90"alt="奥德赛 2005款 2.4L 舒适型" /></a>
+                    <span class="fontbred">￥9.28万</span>
+                    <span><a title="奥德赛 2005款 2.4L 舒适型" href="/dealer/129896/2177887.html#pvareaid=100476" target="_blank">奥德赛 2005款 2.4L 舒</a></span>
+                    <span>12.00万公里  2006年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2165365.html#pvareaid=100476" title="马自达3 2010款 1.6L 自动经典时尚型" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/2/26/s_5504235966550340826.jpg" width="120" height="90"alt="马自达3 2010款 1.6L 自动经典时尚型" /></a>
+                    <span class="fontbred">￥7.45万</span>
+                    <span><a title="马自达3 2010款 1.6L 自动经典时尚型" href="/dealer/129896/2165365.html#pvareaid=100476" target="_blank">马自达3 2010款 1.6L 自</a></span>
+                    <span>5.85万公里  2010年</span>
+                </li>
+                
+            	<li>
+                	<a href="/dealer/129896/2164038.html#pvareaid=100476" title="酷派 2006款 2.0L AT" target="_blank"><img src="http://www.autoimg.cn/2scimg/2014/2/26/s_5313759709767273267.jpg" width="120" height="90"alt="酷派 2006款 2.0L AT" /></a>
+                    <span class="fontbred">￥8.20万</span>
+                    <span><a title="酷派 2006款 2.0L AT" href="/dealer/129896/2164038.html#pvareaid=100476" target="_blank">酷派 2006款 2.0L AT</a></span>
+                    <span>8.30万公里  2008年</span>
+                </li>
+                
+
+</ul>
+
+            </div>
+            <div class="message col">
+                <h3>
+                    给商家留言</h3>
+                <ul>
+                    <li class="login_bar" id="login_bar">
+                        <label>
+                            <input type="checkbox" class="chk1" id="anonymity" value="1" checked="checked" />匿名发言</label>
+                        用户名：<input type="text" class="msg_txt" id="username" value="" maxlength="40" onfocus="change();" />
+                        密码：<input type="password" class="msg_txt" id="password" value="" maxlength="25" onfocus="change();" />
+                        <a href="#" style="display: none">忘记密码？</a> <a href="javascript:void(0);" onclick="RegUser();return false;"
+                            target="_blank">用户注册</a></li>
+                    <li class="tip_bar" id="tip_bar"><span id="prompt" style="display: none"></span>
+                        <input type="hidden" id="dealerID" value="129896" /></li>
+                    <li class="mname_bar" id="mname_bar" style="display: none;">您好，<span class="fontred"
+                        id="Uname"></span>
+                        <input type="button" class="msg_btn" onclick="ExitLogon()" value="退 出" /></li>
+                    <li class="tarea_bar" id="tarea_bar">
+                        <textarea rows="3" class="msg_tarea" id="content" onfocus="CheckContent(this);">二手车之家温馨提示您：留言中请不要恶意攻击国家、其他用户及工作人员；不要发布任何广告性质的回复，我们会第一时间永久封杀违规ID。流畅沟通、观点鲜明、善意提醒是我们推崇的良性留言氛围。</textarea></li>
+                    <li class="tarea_bar" id="prompt_bar" style="display: none; padding-right: 40px;">
+                    </li>
+                    <li class="submit_bar" id="submit_bar"><span class="ssubmit">不能超过200字 [按Ctrl+Enter提交]
+                        <input type="button" class="msg_btn" value="提 交" id="btnSubmit" onclick="PostData();" /></span>
+                        <span class="fontdred" id="mustCheck"></span></li>
+                </ul>
+                <dl class="aq" id="aq">
+                </dl>
+                <div class="more_msg" id="more_msg" style="display: none">
+                    共<span class="fontbred" id="LeaveMessageCount"></span>条留言 点击<a href="/dealer/Questions/129896-1.html">查看更多&gt;&gt;</a></div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    
+    <!--内容结束-->
+    <!--底部开始-->
+    <style type="text/css">#footer{width:960px;height:90px;margin:0px auto; padding-top:8px;text-align:center;color:#6a6a6a;}#footer p{padding-bottom:15px;}#footer p a:link,#footer p a:visited {color: #01439A;text-decoration: none;}#footer p a:hover {color: #D60000;text-decoration: none;}.picrz{ position:absolute; right:60px; top:0px;}p.pic_p{ height:40px; line-height:40px; width:840px; padding:0 60px; position:relative; text-align:left;}</style>
+<div id="footer">
+    <p class="pic_p" style="padding:0 60px 8px 60px;">二手车之家 版权所有&nbsp;<a href="http://www.che168.com/Nindex.html" target="_blank" >公司介绍</a>&nbsp;|&nbsp;<a href="http://www.che168.com/nlianxi.html" target="_blank" >联系我们</a>&nbsp;|&nbsp;<a href="http://www.che168.com/Navigation.html" target="_blank" >网站导航</a>&nbsp;<a style="color:#6a6a6a;" href="http://www.che168.com/license3.html" target="_blank" >【广播电视节目制作经营许可证：（京）字第1338号】</a>&nbsp;<a style="color:#6a6a6a;" href="http://www.che168.com/license4.html" target="_blank" >【乙测资字11005061】</a>
+	<span class="picrz"><a href="https://search.szfw.org/cert/l/CX20111226001271001315" target="_blank"><img src="http://www.autoimg.cn/che168_2sc/images/footer/Integrity.gif" alt=""/></a></span>
+	</p>
+    <p><a target="_blank" style="color:#6a6a6a;" href="http://www.miitbeian.gov.cn/">京ICP备11003899号-1</a>&nbsp;|&nbsp;北京市公安局海淀分局网监中心备案编号：1101082002&nbsp;|&nbsp;<a href="http://www.che168.com/license2.html" style="color:#6a6a6a;" target="_blank" >中国互联网协会会员单位</a>&nbsp;|&nbsp;<a href="http://www.che168.com/license1.html" style="color:#6a6a6a;" target="_blank" >电信与信息服务业务经营许可证：京ICP证110115号</a></p>
+</div>
+
+
+    <!--底部结束-->
+    <script src="http://x.autoimg.cn/che168/js/jquery1.4.2.js" type="text/javascript"
+        language="javascript"></script>
+    <script src="/js/Dealer/Common.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript" src="http://club.service.autohome.com.cn/js/md5.js"></script>
+    <script src="/js/Dealer/MessagesList.js?2013072402" type="text/javascript"></script>
+    <script type="text/javascript">
+        var DealerId = '129896';
+        /*留言调用 最多显示五条 超过5 条显示下面一共多少条*/
+        GetList(1, 5, DealerId,1);
+    </script>
+    <script type='text/javascript' src='http://x.autoimg.cn/che168/pv/js/pv1_2.js'></script>
+<script type='text/javascript'>
+function sendPV(){
+var pvTrack = new PVTrack();
+pvTrack.page=4001000;pvTrack.object=129896;pvTrack.dealer=129896;pvTrack.track();}
+sendPV();
+</script>
+
+</body>
+</html>

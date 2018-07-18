@@ -1,0 +1,109 @@
+
+################################################################
+# Properties for test
+# 11/21/2013
+# hongwm
+# example template
+################################################################
+################################################################
+# Schema description
+################################################################
+politeness:2
+proptype:Buying_info
+schema:Buy_car,expected_car,expected_price,Buyer_name,Buyer_phonenumber
+
+################################################################
+# source configuration
+################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.che168.com/china/BuyList------p.html
+
+################################################################
+# step 1, get Buy_car list
+################################################################
+process.1.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+#filter.class:com.souche.ste.filter.MultiExtract
+#filter.parameters.from:body
+#filter.parameters.to:search_results
+#filter.parameters.begin:<table
+#filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:search_results
+filter.parameters.to:buyer_info
+filter.parameters.begin:<tr bgcolor
+filter.parameters.end:</td></tr>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:buyer_info
+filter.parameters.to:buyer_url
+filter.parameters.begin:href="
+filter.parameters.end:">
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:buyer_info
+filter.parameters.to:Buy_car
+filter.parameters.begin:">
+filter.parameters.end:</a></td>
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.che168.com/" buyer_url
+filter.parameters.to:buyer_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:buyer_url
+filter.parameters.to:buyer_body
+
+################################################################
+# step 2, get Buyer_name list
+################################################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:buyer_body
+filter.parameters.to:boxlist
+filter.parameters.begin:<div class="buyList_Title">
+filter.parameters.end:</tbody></table>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:boxlist
+filter.parameters.to:expected_car
+filter.parameters.begin:<td class="t_2" colspan="3">
+filter.parameters.end:</td>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:boxlist
+filter.parameters.to:Buyer_name
+filter.parameters.begin:求购人姓名：
+filter.parameters.end:<td class="t">
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:boxlist
+filter.parameters.to:Buyer_phonenumber
+filter.parameters.begin:<img src="
+filter.parameters.end:" />
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.che168.com/" Buyer_phonenumber
+filter.parameters.to:Buyer_phonenumber
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:boxlist
+filter.parameters.to:expected_price
+filter.parameters.begin:  <strong>
+filter.parameters.end:</strong>
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:Buyer_name
+
+filter.class:com.souche.ste.filter.DefaultValueFilter
+filter.parameters.num:n/a
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+#result.parameter.xxx=xxx

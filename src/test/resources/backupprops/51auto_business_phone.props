@@ -1,0 +1,154 @@
+
+################################################################
+# Properties for 51auto business phone
+# 04/29/2014
+# hongwm
+# 51auto ershouche business
+################################################################
+################################################################
+# Schema description
+############################################################
+politeness:1
+proptype:business
+schema:url,city,seller_name,seller_phone
+
+#############################################################
+# source configuration
+#####################################################################
+source.class:com.souche.ste.source.SourceBuilder
+source.parameters.url:http://www.51auto.com/quanguo/pabmdcig3f/?page=1
+
+#################################################################
+# loop process builder
+#################################################################
+process.1.class:com.souche.ste.process.builder.LoopProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.MathLoopFilter
+filter.parameters.init:1
+filter.parameters.inc:1
+filter.parameters.to:num
+filter.parameters.maxValue:100
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://www.51auto.com/quanguo/pabmdcig3f/?page=" num
+filter.parameters.to:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:body
+
+filter.class:com.souche.ste.filter.SleepFilter
+filter.parameters.sleep:2000
+
+################################################################
+#step 2,get info list
+################################################################
+process.2.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:body
+filter.parameters.to:items
+filter.parameters.begin:sr_carlist b10
+filter.parameters.end:</ul>
+
+filter.class:com.souche.ste.filter.MultiExtract
+filter.parameters.from:items
+filter.parameters.to:item
+filter.parameters.begin:<li
+filter.parameters.end:</li>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item
+filter.parameters.to:item_info
+filter.parameters.begin:<a href
+filter.parameters.end:">
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:item_info
+filter.parameters.to:url
+filter.parameters.begin:="
+filter.parameters.end:"
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:url
+filter.parameters.to:detail_body
+
+#########################
+# get city, seller_name
+########################
+filter.class:com.souche.ste.filter.CssExtractFilter
+filter.parameters.from:detail_body
+filter.parameters.to:list
+filter.parameters.css:.sm_dl
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:list
+filter.parameters.to:city
+filter.parameters.begin:所&nbsp;在&nbsp;地&nbsp;：</span>
+filter.parameters.end:</dd>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:list
+filter.parameters.to:seller_name
+filter.parameters.begin:商铺类别：</span>
+filter.parameters.end:</dd>
+
+###########################################################################
+#step 5,get phone_url
+###########################################################################
+process.5.class:com.souche.ste.process.builder.ConfigProcessBuilder
+process.parameters.attrs:url
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:url
+filter.parameters.to:phone_url
+filter.parameters.begin:buycar/
+filter.parameters.end:.html
+
+filter.class:com.souche.ste.filter.BindStringFilter
+filter.parameters.attrs:"http://m.51auto.com/car_info.php?car_id=" phone_url
+filter.parameters.to:phone_url
+
+filter.class:com.souche.ste.filter.CrawledUrlIgnoreFilter
+filter.parameters.check:phone_url
+
+filter.class:com.souche.ste.filter.UrlRequestFilter
+filter.parameters.url:phone_url
+filter.parameters.to:phone_body
+
+###########################################################################
+#step 5,get phone
+###########################################################################
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:phone_body
+filter.parameters.to:update_time
+filter.parameters.begin:publishDate">
+filter.parameters.end:<
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:phone_body
+filter.parameters.to:phone_info
+filter.parameters.begin:<div class="phone">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.ExtractFilter
+filter.parameters.from:phone_info
+filter.parameters.to:seller_phone
+filter.parameters.begin:<div class="phone">
+filter.parameters.end:</div>
+
+filter.class:com.souche.ste.filter.RemoveHtmlTagFilter
+filter.parameters.attrs:seller_phone
+
+
+################################################################
+# write results
+################################################################
+result.class:com.souche.ste.result.FileWriteResultBuilder
+result.parameters.maxNumPerFile:10000000
